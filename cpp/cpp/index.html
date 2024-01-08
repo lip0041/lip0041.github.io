@@ -251,14 +251,8 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
-        <a href="../../pat/ab-format/" class="md-tabs__link">
+        <a href="../../pat/advanced/" class="md-tabs__link">
           
   
     
@@ -267,9 +261,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -429,6 +420,8 @@
       
         
       
+        
+      
     
     
     
@@ -461,6 +454,27 @@
             Solutions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pat/advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A1001: A+B Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -558,10 +572,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -572,8 +586,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Advanced
           </label>
@@ -1428,10 +1442,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1442,8 +1456,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             mooc
           </label>
@@ -1846,55 +1860,55 @@
 <ul>
 <li>
 <p>概念上看</p>
-</li>
-<li>
-<p>声明是使名字被程序所知，告诉程序又一个某种类型的变量/函数，规定了变量的类型和名字，并**不分配存储空间**。</p>
-</li>
-<li>
-<p>定义是负责创建于名字关联的实体，不仅规定变量的类型和名字，还会给这个变量**申请存储空间，也可能会默认赋初值**。</p>
+<ol>
+<li>声明是使名字被程序所知，告诉程序又一个某种类型的变量/函数，规定了变量的类型和名字，并**不分配存储空间**。</li>
+<li>定义是负责创建于名字关联的实体，不仅规定变量的类型和名字，还会给这个变量**申请存储空间，也可能会默认赋初值**。</li>
+</ol>
 </li>
 <li>
 <p><strong>变量能且只能被定义一次，但可以被多次声明</strong></p>
 </li>
 <li>
 <p>声明一个变量而非定义，则需要在变量名前加关键字<code>extern</code>，且不要显示初始化，一旦初始化就抵消了<code>extern</code>的作用，变成了定义</p>
-<p>//声明了整型变量i,不是定义
-extern int i; 
-//声明并且定义了整型变量j,分配了存储空间，并一般默认赋初值
-int j;
-//显示初始化抵消了extern的作用，此为定义
-extern double pi = 3.1416; </p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//声明了整型变量i,不是定义</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">//声明并且定义了整型变量j,分配了存储空间，并一般默认赋初值</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">//显示初始化抵消了extern的作用，此为定义</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.1416</span><span class="p">;</span>
+</span></code></pre></div>
 </li>
 </ul>
 <h2 id="const">引用和指针及const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>引用(refers to)</strong>，即别名。程序将引用和它的初始值绑定在一起，而不是将初始值拷贝给引用。引用不是对象，必须初始化。</li>
-<li><strong>指针(point to)</strong>，本身是一个对象，允许对指针赋值和拷贝，无需在定义时赋初值</li>
-</ul>
+<li>
+<p><strong>指针(point to)</strong>，本身是一个对象，允许对指针赋值和拷贝，无需在定义时赋初值</p>
 <blockquote>
 <p>c++的空指针字面值为<code>nullptr</code>，它可以转换成任意其他的指针类型</p>
 </blockquote>
-<ul>
+</li>
 <li>
 <p><code>const</code>限定符，默认情况下，const对象仅在文件内有效，若想在多个文件中共享const对象，则需要在定义前加<code>extern</code>关键字</p>
 </li>
 <li>
 <p>对<code>const</code>对引用：<code>const type &amp;</code>，又称"常量引用"。</p>
-<p>const int ci = 1024;const int &amp;r1 = ci; 
-// 正确，此时r1即为const常量ci的引用，不可通过r1改变ci的值int &amp;r = ci; // 出错，不能将普通的引用&amp;绑定到const常量上</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ci</span><span class="p">;</span><span class="w"> </span><span class="c1">// 正确，此时r1即为const常量ci的引用，不可通过r1改变ci的值</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ci</span><span class="p">;</span><span class="w"> </span><span class="c1">// 出错，不能将普通的引用&amp;绑定到const常量上</span>
+</span></code></pre></div>
 </li>
 <li>
 <p>const型指针<code>type *const</code>：<strong>顶层const**表示指针/对象本身是个常量，**底层const**表示指针所指的对象是个常量--**用于声明引用的const都是底层const</strong></p>
-</li>
-</ul>
 <blockquote>
-<p>底层const的限制：执行对象的拷贝操作时，拷入和拷出的对象必须具有相同的底层const资格--指向的是个常量，或者两个对象的数据类型必须可以转换(如，非常量可以转换成常量，反之不行）</p>
+<p>底层const的限制：执行对象的拷贝操作时，拷入和拷出的对象必须具有相同的底层const资格--指向的是个常量，或者两个对象的数据类型必须可以转换（如，非常量可以转换成常量，反之不行）</p>
 </blockquote>
-<ul>
+</li>
 <li>
 <p>一个指针可以同时是顶层const和底层const，如</p>
-<p>const int *const p1 = p;
-// 靠右的const是顶层const--自身是常量，靠左的是底层constcont int &amp;r = i; // r是底层const</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="k">const</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// 靠右的const是顶层const--自身是常量，靠左的是底层</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">constcont</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">// r是底层const</span>
+</span></code></pre></div>
 </li>
 <li>
 <p>c++11可以通过将变量声明为<code>constexpr</code>类型，使编译器自己验证变量是否为一个常量表达式（字面值也是常量表达式），当然，声明时必须用常量表达式初始化。限定符<code>constexpr</code>仅对指针/对象有效，对指针指向的对象无关，即是**顶层const**</p>
@@ -1910,14 +1924,16 @@ extern double pi = 3.1416; </p>
 <p>C++新标准：使用关键字<code>using</code></p>
 <p>using SI = Sales_item; // SI是Sales_item的同义词</p>
 </li>
-</ul>
+<li>
 <p><code>auto</code>：编译器分析表达式所属的类型，auto定义的变量必须有初始值，一般忽略顶层const</p>
+</li>
+<li>
 <p><code>decltype</code>：选择并返回操作数的数据类型，只分析得到类型，而不计算表达式的值</p>
-<div class="language-text highlight"><pre><span></span><code>decltype(f()) sum = x; // sum类型为函数f的返回类型，并不调用f
-</code></pre></div>
-<blockquote>
-<p>decltype((variable))的结果永远是引用，而decltype(variable)结果只有当variable本身是引用时才是引用</p>
-</blockquote>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">decltype</span><span class="p">(</span><span class="n">f</span><span class="p">())</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// sum类型为函数f的返回类型，并不调用f</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">// decltype((variable))的结果永远是引用，而decltype(variable)结果只有当variable本身是引用时才是引用</span>
+</span></code></pre></div>
+</li>
+</ul>
 
 
 

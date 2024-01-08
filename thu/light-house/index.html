@@ -253,16 +253,8 @@
   
     
     
-      
-  
-  
-    
-  
-  
-    
-    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../pat/ab-format/" class="md-tabs__link">
+        <a href="../../pat/advanced/" class="md-tabs__link">
           
   
     
@@ -271,9 +263,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -431,6 +420,8 @@
       
         
       
+        
+      
     
     
     
@@ -463,6 +454,27 @@
             Solutions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pat/advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A1001: A+B Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -560,10 +572,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -574,8 +586,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Advanced
           </label>
@@ -1432,10 +1444,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1446,8 +1458,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             mooc
           </label>
@@ -1832,7 +1844,7 @@
 <p>我是跟着邓老师的数据结构课程进度做的题，本想着用两次归并排序（因为快排还没学到），可分数一直卡在15分--（RunTime Error-signal 11-SIGSEGV），因为这个信号大多数情况下是由于指针越界的问题，让我一度以为是我归并排序写错了。
 经过几个小时的无能挣扎，突然试了下网上大部分人套用的快排函数，一下就AC了😳
 然后我再次阅读SIGSEGV信号的常见类型，发现了第4条和第5条。。。</p>
-<p><img alt="" src="../../assets/lh1.png" /></p>
+<p><img alt="lighthouse1" src="../../assets/lh1.png" /></p>
 <figure class="kg-card kg-image-card"></figure>
 
 <ul>
@@ -1843,7 +1855,7 @@
 </ul>
 <h2 id="ac">AC代码<a class="headerlink" href="#ac" title="Permanent link">&para;</a></h2>
 <p>先附上AC截屏，艾玛，太不容易了，主要是不给测试数据，就跟无头苍蝇乱撞一样，纪念一下</p>
-<p><img alt="" src="../../assets/lh2.png" /></p>
+<p><img alt="lighthouse2" src="../../assets/lh2.png" /></p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">  2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">  3</a></span>
@@ -2060,7 +2072,7 @@
 </span><span id="__span-0-102"><a id="__codelineno-0-102" name="__codelineno-0-102"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
 </span><span id="__span-0-103"><a id="__codelineno-0-103" name="__codelineno-0-103"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
 </span><span id="__span-0-104"><a id="__codelineno-0-104" name="__codelineno-0-104"></a><span class="w">        </span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lhs</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-0-105"><a id="__codelineno-0-105" name="__codelineno-0-105"></a><span class="w">    </span><span class="n">invInside</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">cnt</span><span class="p">);</span><span class="w"> </span><span class="c1">// compute cnt based on y </span>
+</span><span id="__span-0-105"><a id="__codelineno-0-105" name="__codelineno-0-105"></a><span class="w">    </span><span class="n">invInside</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">cnt</span><span class="p">);</span><span class="w"> </span><span class="c1">// compute cnt based on y</span>
 </span><span id="__span-0-106"><a id="__codelineno-0-106" name="__codelineno-0-106"></a>
 </span><span id="__span-0-107"><a id="__codelineno-0-107" name="__codelineno-0-107"></a><span class="w">    </span><span class="c1">// 两种计算方式，第一个是算出逆序对然后C(n,2)减一下，第二个是直接算出顺序对</span>
 </span><span id="__span-0-108"><a id="__codelineno-0-108" name="__codelineno-0-108"></a><span class="w">    </span><span class="c1">// printf(&quot;%lld&quot;, (long long)(n)*(long long)(n-1)/(long long)(2) - cnt);</span>
