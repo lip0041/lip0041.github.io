@@ -1814,7 +1814,7 @@
 <p>此题是考察溢出的问题，本应该是较为容易的题。但是由于我现在是在学习c++中，干啥都用<code>cin</code>/<code>cout</code>。
 发现提交这个题的时候，第三个测试点用<code>cin</code>过不去，用<code>scanf</code>就过去了。于是就想着探究一番</p>
 <h2 id="cin-scanf">cin 与 scanf 探究<a class="headerlink" href="#cin-scanf" title="Permanent link">&para;</a></h2>
-<p>通过<a href="https://blog.csdn.net/zoukangdlut/article/details/68941160?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control" title="查阅资料">查阅资料</a>得知，<code>cin</code>是有4个条件状态量的：</p>
+<p>通过<a href="https://blog.csdn.net/zoukangdlut/article/details/68941160?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control">查阅资料</a>得知，<code>cin</code>是有4个条件状态量的：</p>
 <div class="language-text highlight"><pre><span></span><code>goodbit:无错误
 eofbit:已到达文件尾
 failbit:非致命的输入/输出错误，可挽回
