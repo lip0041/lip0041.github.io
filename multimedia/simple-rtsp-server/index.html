@@ -10,28 +10,26 @@
         <meta name="author" content="isobung">
       
       
-        <link rel="canonical" href="https://lip0041.github.io/program-languages/cpp/cpp/">
+        <link rel="canonical" href="https://lip0041.github.io/multimedia/simple-rtsp-server/">
       
       
-        <link rel="prev" href="../../../solutions/thu/light-house/">
+        <link rel="prev" href="../nginx/">
       
       
-        <link rel="next" href="../cpp-pat-a1065/">
       
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
-        <title>C++ - lip0041</title>
+        <title>Simple RTSP Server - lip0041</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -91,7 +89,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -117,7 +115,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#c-memo" class="md-skip">
+        <a href="#mediamtx" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +131,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="lip0041" class="md-header__button md-logo" aria-label="lip0041" data-md-component="logo">
+    <a href="../.." title="lip0041" class="md-header__button md-logo" aria-label="lip0041" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -153,7 +151,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              C++
+              Simple RTSP Server
             
           </span>
         </div>
@@ -273,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -299,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../solutions/pat/summary/" class="md-tabs__link">
+        <a href="../../solutions/pat/summary/" class="md-tabs__link">
           
   
     
@@ -318,21 +316,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../program-languages/cpp/cpp/" class="md-tabs__link">
           
   
     
@@ -351,11 +345,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../multimedia/nginx/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../nginx/" class="md-tabs__link">
           
   
     
@@ -396,7 +392,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="lip0041" class="md-nav__button md-logo" aria-label="lip0041" data-md-component="logo">
+    <a href="../.." title="lip0041" class="md-nav__button md-logo" aria-label="lip0041" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -449,7 +445,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../.." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -576,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/summary/" class="md-nav__link">
+      <a href="../../solutions/pat/summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -714,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/ab-format/" class="md-nav__link">
+      <a href="../../solutions/pat/ab-format/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/ab-for-polynomials/" class="md-nav__link">
+      <a href="../../solutions/pat/ab-for-polynomials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/counting-leaves/" class="md-nav__link">
+      <a href="../../solutions/pat/counting-leaves/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/spell-it-right/" class="md-nav__link">
+      <a href="../../solutions/pat/spell-it-right/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/sign-in-and-sign-out/" class="md-nav__link">
+      <a href="../../solutions/pat/sign-in-and-sign-out/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/product-of-polynomials/" class="md-nav__link">
+      <a href="../../solutions/pat/product-of-polynomials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/world-cup-betting/" class="md-nav__link">
+      <a href="../../solutions/pat/world-cup-betting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/waiting-in-line/" class="md-nav__link">
+      <a href="../../solutions/pat/waiting-in-line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -882,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/general-palindromic-number/" class="md-nav__link">
+      <a href="../../solutions/pat/general-palindromic-number/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -903,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/tree-traversals/" class="md-nav__link">
+      <a href="../../solutions/pat/tree-traversals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -924,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/digital-library/" class="md-nav__link">
+      <a href="../../solutions/pat/digital-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -945,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/hello-world-for-u/" class="md-nav__link">
+      <a href="../../solutions/pat/hello-world-for-u/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -966,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/sharing/" class="md-nav__link">
+      <a href="../../solutions/pat/sharing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -987,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/password/" class="md-nav__link">
+      <a href="../../solutions/pat/password/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1008,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/boys-vs-girls/" class="md-nav__link">
+      <a href="../../solutions/pat/boys-vs-girls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1029,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/course-list-for-student/" class="md-nav__link">
+      <a href="../../solutions/pat/course-list-for-student/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1050,7 +1046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/shuffling-machine/" class="md-nav__link">
+      <a href="../../solutions/pat/shuffling-machine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1071,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/shortest-distance/" class="md-nav__link">
+      <a href="../../solutions/pat/shortest-distance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1092,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/student-list-for-course/" class="md-nav__link">
+      <a href="../../solutions/pat/student-list-for-course/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1113,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/pop-sequence/" class="md-nav__link">
+      <a href="../../solutions/pat/pop-sequence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/linked-list-sorting/" class="md-nav__link">
+      <a href="../../solutions/pat/linked-list-sorting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1155,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/the-dominant-color/" class="md-nav__link">
+      <a href="../../solutions/pat/the-dominant-color/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1176,7 +1172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/mice-and-rice/" class="md-nav__link">
+      <a href="../../solutions/pat/mice-and-rice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/are-they-equal/" class="md-nav__link">
+      <a href="../../solutions/pat/are-they-equal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1218,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/dating/" class="md-nav__link">
+      <a href="../../solutions/pat/dating/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1239,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/set-similarity/" class="md-nav__link">
+      <a href="../../solutions/pat/set-similarity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1260,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/ab-and-c-64bit/" class="md-nav__link">
+      <a href="../../solutions/pat/ab-and-c-64bit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1281,7 +1277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/speech-patterns/" class="md-nav__link">
+      <a href="../../solutions/pat/speech-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1302,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/scientific-notation/" class="md-nav__link">
+      <a href="../../solutions/pat/scientific-notation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1323,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/reversing-linked-list/" class="md-nav__link">
+      <a href="../../solutions/pat/reversing-linked-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1344,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/kuchiguse/" class="md-nav__link">
+      <a href="../../solutions/pat/kuchiguse/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1365,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/read-number-in-chinese/" class="md-nav__link">
+      <a href="../../solutions/pat/read-number-in-chinese/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1386,7 +1382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/tree-traversals-again/" class="md-nav__link">
+      <a href="../../solutions/pat/tree-traversals-again/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1407,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/acute-stroke/" class="md-nav__link">
+      <a href="../../solutions/pat/acute-stroke/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1428,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/deduplication-on-a-linked-list/" class="md-nav__link">
+      <a href="../../solutions/pat/deduplication-on-a-linked-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1449,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/mars-numbers/" class="md-nav__link">
+      <a href="../../solutions/pat/mars-numbers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1470,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/invert-a-binary-tree/" class="md-nav__link">
+      <a href="../../solutions/pat/invert-a-binary-tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1491,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/integer-factorization/" class="md-nav__link">
+      <a href="../../solutions/pat/integer-factorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1512,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/pat/group-photo/" class="md-nav__link">
+      <a href="../../solutions/pat/group-photo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1595,7 +1591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/thu/proper-rebuild/" class="md-nav__link">
+      <a href="../../solutions/thu/proper-rebuild/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1616,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../solutions/thu/light-house/" class="md-nav__link">
+      <a href="../../solutions/thu/light-house/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1649,10 +1645,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1665,12 +1659,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -1684,7 +1678,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Notes
@@ -1695,10 +1689,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1715,12 +1707,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -1734,7 +1726,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Program Languages
@@ -1745,30 +1737,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    C++
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../program-languages/cpp/cpp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1777,62 +1749,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      程序的编译和运行
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      声明与定义的关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#const" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用和指针及const
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-alias" class="md-nav__link">
-    <span class="md-ellipsis">
-      类型别名(type alias)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1845,7 +1761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cpp-pat-a1065/" class="md-nav__link">
+      <a href="../../program-languages/cpp/cpp-pat-a1065/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1866,7 +1782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rust/rust/" class="md-nav__link">
+      <a href="../../program-languages/rust/rust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1899,8 +1815,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1915,12 +1833,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -1934,7 +1852,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Multimedia
@@ -1948,7 +1866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multimedia/nginx/" class="md-nav__link">
+      <a href="../nginx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1966,10 +1884,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../multimedia/simple-rtsp-server/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1978,6 +1905,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -2010,50 +1938,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      程序的编译和运行
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      声明与定义的关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#const" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用和指针及const
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-alias" class="md-nav__link">
-    <span class="md-ellipsis">
-      类型别名(type alias)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2067,7 +1951,7 @@
                   
 
   
-    <a href="https://github.com/lip0041/notes/edit/main/docs/program-languages/cpp/cpp.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/edit/main/docs/multimedia/simple-rtsp-server.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -2076,110 +1960,26 @@
     
       
     
-    <a href="https://github.com/lip0041/notes/raw/main/docs/program-languages/cpp/cpp.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/raw/main/docs/multimedia/simple-rtsp-server.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="c-memo">C++ Memo<a class="headerlink" href="#c-memo" title="Permanent link">&para;</a></h1>
-<h2 id="_1">程序的编译和运行<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>常用的c++编译器是GNU编译器（还有微软的Visual Studio编译器）</li>
-<li>默认运行GNU命令是<code>g++</code>:
-    <code>$ g++ proc.cpp -o proc_name</code>
-    其中<code>g++</code>调用GNU编译器，<code>proc.cpp</code>是我们写的程序名，<code>-o proc_name</code>是编译器参数，表示编译生成的可执行文件文件名--<code>proc_name</code>
-    若不加-o参数，则win下默认生成<code>a.exe</code>文件，unix下生成<code>a.out</code>文件</li>
-<li>运行可执行文件
-    win下通过 <code>.\a</code>运行<code>a.exe</code>--后缀可以省略
-    unix下通过<code>./a.out</code>运行<code>a.out</code></li>
-<li>获取程序返回值
-    运行后通过<code>echo</code>命令获取程序的返回值
-    win下键入<code>$ echo $ERRORLEVEL%</code>
-    unix下键入<code>$ echo $?</code></li>
-</ul>
-<blockquote>
-<p>注： 命令中的第一个$是系统提示符，不用输入</p>
-</blockquote>
-<h2 id="_2">声明与定义的关系<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>概念上看</p>
+<h1 id="mediamtx">MediaMTX<a class="headerlink" href="#mediamtx" title="Permanent link">&para;</a></h1>
 <ol>
-<li>声明是使名字被程序所知，告诉程序又一个某种类型的变量/函数，规定了变量的类型和名字，并**不分配存储空间**。</li>
-<li>定义是负责创建于名字关联的实体，不仅规定变量的类型和名字，还会给这个变量**申请存储空间，也可能会默认赋初值**。</li>
+<li>解压mediamtx，执行其中的 mediamtx.exe 程序</li>
+<li>
+<p>使用ffmpeg.exe 推流视频</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ffmpeg.exe<span class="w"> </span>-re<span class="w"> </span>-stream_loop<span class="w"> </span>-1<span class="w"> </span>-i<span class="w"> </span>sharing/360p.mp4<span class="w"> </span>-c<span class="w"> </span>copy<span class="w"> </span>-f<span class="w"> </span>rtsp<span class="w"> </span>rtsp://127.0.0.1:8554/stream
+</span></code></pre></div>
+<p>上面的命令中 <code>sharing/360p.mp4</code>是要推送的本地文件的相对路径</p>
+</li>
+<li>
+<p>rtsp拉取的地址即<code>rtsp://127.0.0.1:8554/stream</code>，将这个值设置给player实例的url属性即可</p>
+</li>
 </ol>
-</li>
-<li>
-<p><strong>变量能且只能被定义一次，但可以被多次声明</strong></p>
-</li>
-<li>
-<p>声明一个变量而非定义，则需要在变量名前加关键字<code>extern</code>，且不要显示初始化，一旦初始化就抵消了<code>extern</code>的作用，变成了定义</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//声明了整型变量i,不是定义</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">//声明并且定义了整型变量j,分配了存储空间，并一般默认赋初值</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">//显示初始化抵消了extern的作用，此为定义</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.1416</span><span class="p">;</span>
-</span></code></pre></div>
-</li>
-</ul>
-<h2 id="const">引用和指针及const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>引用(refers to)</strong>，即别名。程序将引用和它的初始值绑定在一起，而不是将初始值拷贝给引用。引用不是对象，必须初始化。</li>
-<li>
-<p><strong>指针(point to)</strong>，本身是一个对象，允许对指针赋值和拷贝，无需在定义时赋初值</p>
-<blockquote>
-<p>c++的空指针字面值为<code>nullptr</code>，它可以转换成任意其他的指针类型</p>
-</blockquote>
-</li>
-<li>
-<p><code>const</code>限定符，默认情况下，const对象仅在文件内有效，若想在多个文件中共享const对象，则需要在定义前加<code>extern</code>关键字</p>
-</li>
-<li>
-<p>对<code>const</code>对引用：<code>const type &amp;</code>，又称"常量引用"。</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ci</span><span class="p">;</span><span class="w"> </span><span class="c1">// 正确，此时r1即为const常量ci的引用，不可通过r1改变ci的值</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ci</span><span class="p">;</span><span class="w"> </span><span class="c1">// 出错，不能将普通的引用&amp;绑定到const常量上</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>const型指针<code>type *const</code>：<strong>顶层const**表示指针/对象本身是个常量，**底层const**表示指针所指的对象是个常量--**用于声明引用的const都是底层const</strong></p>
-<blockquote>
-<p>底层const的限制：执行对象的拷贝操作时，拷入和拷出的对象必须具有相同的底层const资格--指向的是个常量，或者两个对象的数据类型必须可以转换（如，非常量可以转换成常量，反之不行）</p>
-</blockquote>
-</li>
-<li>
-<p>一个指针可以同时是顶层const和底层const，如</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="k">const</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// 靠右的const是顶层const--自身是常量，靠左的是底层</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">constcont</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">// r是底层const</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>c++11可以通过将变量声明为<code>constexpr</code>类型，使编译器自己验证变量是否为一个常量表达式（字面值也是常量表达式），当然，声明时必须用常量表达式初始化。限定符<code>constexpr</code>仅对指针/对象有效，对指针指向的对象无关，即是**顶层const**</p>
-</li>
-</ul>
-<h2 id="type-alias">类型别名(type alias)<a class="headerlink" href="#type-alias" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>传统方法：使用关键字<code>typedef</code></p>
-<p>typedef double wages; // wages是double的同义词(synonym)</p>
-</li>
-<li>
-<p>C++新标准：使用关键字<code>using</code></p>
-<p>using SI = Sales_item; // SI是Sales_item的同义词</p>
-</li>
-<li>
-<p><code>auto</code>：编译器分析表达式所属的类型，auto定义的变量必须有初始值，一般忽略顶层const</p>
-</li>
-<li>
-<p><code>decltype</code>：选择并返回操作数的数据类型，只分析得到类型，而不计算表达式的值</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">decltype</span><span class="p">(</span><span class="n">f</span><span class="p">())</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// sum类型为函数f的返回类型，并不调用f</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">// decltype((variable))的结果永远是引用，而decltype(variable)结果只有当variable本身是引用时才是引用</span>
-</span></code></pre></div>
-</li>
-</ul>
 
 
 
@@ -2217,7 +2017,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../solutions/thu/light-house/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PA1">
+          <a href="../nginx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Local Web MP4 Server">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2227,27 +2027,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                PA1
+                Local Web MP4 Server
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../cpp-pat-a1065/" class="md-footer__link md-footer__link--next" aria-label="Next: cpp">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                cpp
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -2295,12 +2079,12 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
