@@ -278,7 +278,7 @@
   
     
   
-  简介
+  About
 
         </a>
       </li>
@@ -327,25 +327,16 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../program-languages/cpp/cpp/" class="md-tabs__link">
           
   
     
   
-  Notes
+  Program Languages
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -557,7 +548,7 @@
               
   
   <span class="md-ellipsis">
-    简介
+    About
   </span>
   
 
@@ -568,7 +559,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            简介
+            About
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1760,6 +1751,8 @@
       
         
       
+        
+      
     
     
     
@@ -1779,7 +1772,7 @@
             
   
   <span class="md-ellipsis">
-    Notes
+    Program Languages
   </span>
   
 
@@ -1788,52 +1781,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Notes
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Program Languages
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Program Languages
           </label>
@@ -1858,15 +1805,18 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1877,8 +1827,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             C Plus Plus
           </label>
@@ -1971,14 +1921,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2962,11 +2904,14 @@
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>clang<span class="w"> </span>-Xclang<span class="w"> </span>-ast-dump<span class="w"> </span>-fsyntax-only<span class="w"> </span>test.cpp
 </span></code></pre></div>
 <p>输出test.cpp经过编译器前端的预处理、语法分析、语义分析之后生成的抽象语法树（AST），最后几行显示了经过分析后的AST</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="err">`</span><span class="o">-</span><span class="n">FunctionDecl</span><span class="w"> </span><span class="mh">0x55d7ecff3d90</span><span class="w"> </span><span class="o">&lt;</span><span class="n">test</span><span class="p">.</span><span class="n">cpp</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">4</span><span class="o">:</span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">5</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="err">&#39;</span><span class="kt">int</span><span class="w"> </span><span class="p">()</span><span class="err">&#39;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="err">`</span><span class="o">-</span><span class="n">CompoundStmt</span><span class="w"> </span><span class="mh">0x55d7ecff3ed0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">line</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">4</span><span class="o">:</span><span class="mi">1</span><span class="o">&gt;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="err">`</span><span class="o">-</span><span class="n">ReturnStmt</span><span class="w"> </span><span class="mh">0x55d7ecff3ec0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">line</span><span class="o">:</span><span class="mi">3</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">:</span><span class="mi">12</span><span class="o">&gt;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="err">`</span><span class="o">-</span><span class="n">IntegerLiteral</span><span class="w"> </span><span class="mh">0x55d7ecff3ea0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">col</span><span class="o">:</span><span class="mi">12</span><span class="o">&gt;</span><span class="w"> </span><span class="err">&#39;</span><span class="kt">int</span><span class="err">&#39;</span><span class="w"> </span><span class="mi">0</span>
-</span></code></pre></div>
+<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="err">`</span><span class="o">-</span><span class="n">FunctionDecl</span><span class="w"> </span><span class="mh">0x55d7ecff3d90</span><span class="w"> </span><span class="o">&lt;</span><span class="n">test</span><span class="p">.</span><span class="n">cpp</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">4</span><span class="o">:</span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">5</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="err">&#39;</span><span class="kt">int</span><span class="w"> </span><span class="p">()</span><span class="err">&#39;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="err">`</span><span class="o">-</span><span class="n">CompoundStmt</span><span class="w"> </span><span class="mh">0x55d7ecff3ed0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">line</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="o">:</span><span class="mi">4</span><span class="o">:</span><span class="mi">1</span><span class="o">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="err">`</span><span class="o">-</span><span class="n">ReturnStmt</span><span class="w"> </span><span class="mh">0x55d7ecff3ec0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">line</span><span class="o">:</span><span class="mi">3</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">:</span><span class="mi">12</span><span class="o">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">      </span><span class="err">`</span><span class="o">-</span><span class="n">IntegerLiteral</span><span class="w"> </span><span class="mh">0x55d7ecff3ea0</span><span class="w"> </span><span class="o">&lt;</span><span class="n">col</span><span class="o">:</span><span class="mi">12</span><span class="o">&gt;</span><span class="w"> </span><span class="err">&#39;</span><span class="kt">int</span><span class="err">&#39;</span><span class="w"> </span><span class="mi">0</span>
+</span></code></pre></div></td></tr></table></div>
 <h2 id="_2">前端生成中间代码<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>第二步骤时将内存中的AST生成LLVM IR中间代码。</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>clang++<span class="w"> </span>-S<span class="w"> </span>-emit-llvm<span class="w"> </span>test.cpp
