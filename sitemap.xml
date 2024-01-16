@@ -16,6 +16,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lip0041.github.io/embed/board/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/frontend/js-ts/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lip0041.github.io/multimedia/av/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
@@ -107,6 +117,21 @@
     </url>
     <url>
          <loc>https://lip0041.github.io/program-languages/rust/rust/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/skills/gcc/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/skills/git/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/skills/shell/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
