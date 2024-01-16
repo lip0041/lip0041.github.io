@@ -6,12 +6,47 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lip0041.github.io/compiler/llvm/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/embed/arm/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/multimedia/av/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/multimedia/ffmpeg/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lip0041.github.io/multimedia/nginx/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lip0041.github.io/multimedia/rtp/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/multimedia/rtsp/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lip0041.github.io/multimedia/simple-rtsp-server/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/multimedia/wfd/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -62,6 +97,11 @@
     </url>
     <url>
          <loc>https://lip0041.github.io/program-languages/cpp/cpp/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/program-languages/cpp/gtest/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
