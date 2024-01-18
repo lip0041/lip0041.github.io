@@ -136,22 +136,82 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lip0041.github.io/program-languages/cpp/cpp-pat-a1065/</loc>
+         <loc>https://lip0041.github.io/programming/summary/</loc>
          <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lip0041.github.io/program-languages/cpp/cpp/</loc>
+         <loc>https://lip0041.github.io/programming/cpp/cpp-pat-a1065/</loc>
          <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lip0041.github.io/program-languages/cpp/gtest/</loc>
+         <loc>https://lip0041.github.io/programming/cpp/cpp/</loc>
          <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lip0041.github.io/program-languages/rust/rust/</loc>
+         <loc>https://lip0041.github.io/programming/cpp/gtest/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/programming/rust/rust/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/bitalign/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/fileio/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/hexstring/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/jsonparser/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/locallog/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/md5/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/neon/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/quickempty/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/splitmp4/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/timer-with-cond/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lip0041.github.io/snippets/timing/</loc>
          <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
