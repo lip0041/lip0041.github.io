@@ -16,11 +16,11 @@
         <link rel="prev" href="../shell/">
       
       
-        <link rel="next" href="../unix/">
+        <link rel="next" href="../linux/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -432,7 +432,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../snippets/bitalign/" class="md-tabs__link">
+        <a href="../../snippets/group-mean/" class="md-tabs__link">
           
   
     
@@ -1227,6 +1227,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署NTP同步时间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="部署NTP同步时间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      服务端配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      客户端配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ifconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      永久配置ifconfig
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#linux" class="md-nav__link">
     <span class="md-ellipsis">
       查看是否是linux系统由于内存溢出杀死了进程
@@ -1236,7 +1278,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       查看进程里创建一个线程消耗虚存的大小
     </span>
@@ -1263,7 +1305,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       基准测试
     </span>
@@ -1321,6 +1363,15 @@
   <a href="#pidstat" class="md-nav__link">
     <span class="md-ellipsis">
       pidstat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看某进程占用内存
     </span>
   </a>
   
@@ -1386,7 +1437,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       系统检测工具
     </span>
@@ -1395,7 +1446,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       查看系统内存
     </span>
@@ -1404,7 +1455,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       修改进程优先级
     </span>
@@ -1440,7 +1491,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       计数
     </span>
@@ -1473,11 +1524,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../unix/" class="md-nav__link">
+      <a href="../linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Unix
+    Linux
   </span>
   
 
@@ -1945,6 +1996,8 @@
       
         
       
+        
+      
     
     
     
@@ -1977,6 +2030,27 @@
             Snippets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippets/group-mean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分组统计数据
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3432,6 +3506,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署NTP同步时间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="部署NTP同步时间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      服务端配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      客户端配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ifconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      永久配置ifconfig
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#linux" class="md-nav__link">
     <span class="md-ellipsis">
       查看是否是linux系统由于内存溢出杀死了进程
@@ -3441,7 +3557,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       查看进程里创建一个线程消耗虚存的大小
     </span>
@@ -3468,7 +3584,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       基准测试
     </span>
@@ -3526,6 +3642,15 @@
   <a href="#pidstat" class="md-nav__link">
     <span class="md-ellipsis">
       pidstat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看某进程占用内存
     </span>
   </a>
   
@@ -3591,7 +3716,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       系统检测工具
     </span>
@@ -3600,7 +3725,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       查看系统内存
     </span>
@@ -3609,7 +3734,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       修改进程优先级
     </span>
@@ -3645,7 +3770,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       计数
     </span>
@@ -3694,38 +3819,85 @@
 
 
 <h1 id="develop-skill">Develop Skill<a class="headerlink" href="#develop-skill" title="Permanent link">&para;</a></h1>
-<h2 id="linux">查看是否是linux系统由于内存溢出杀死了进程<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 查看log文件</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>egrep<span class="w"> </span>-i<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;killed process&#39;</span><span class="w"> </span>/var/log
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;kill|oom|out of memory&#39;</span>
+<h2 id="ntp">部署NTP同步时间<a class="headerlink" href="#ntp" title="Permanent link">&para;</a></h2>
+<p>多机时间戳同步需要部署NTP服务器和客户端</p>
+<h3 id="_1">服务端配置<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ntp<span class="w"> </span>ntpdate
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># 修改配置文件</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/ntp.conf
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 在末尾添加</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>restrict<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span><span class="w"> </span>mask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span>nomodify
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>server<span class="w"> </span><span class="m">127</span>.127.1.0
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>fudge<span class="w"> </span><span class="m">127</span>.127.1.0<span class="w"> </span>stratum<span class="w"> </span><span class="m">10</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 关闭防火墙(不清楚是否是必须的)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>disable
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 重启ntp server</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>sudo<span class="w"> </span>service<span class="w"> </span>ntp<span class="w"> </span>restart
 </span></code></pre></div>
-<h2 id="_1">查看进程里创建一个线程消耗虚存的大小<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">ulimit</span><span class="w"> </span>-a
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># 输出结果里有个  stack size就是分配的默认栈大小，ubuntu22.04虚拟机分配的是8192kbytes即8M</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 查看系统支持的最大线程数</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>cat<span class="w"> </span>/proc/sys/kernel/threads-max
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 查看pid号数量，进程和线程都会消耗这个id号</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>cat<span class="w"> </span>/proc/sys/kernel/pid_max
+<h3 id="_2">客户端配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># （客户端应该不需要安装ntp）</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ntp<span class="w"> </span>ntpdate
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 修改配置文件</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/ntp.conf
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 在末尾添加</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>server<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span><span class="w"> </span>prefer
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 客户端同步服务端时间戳</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>sudo<span class="w"> </span>ntpdate<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># 若上面命令报ntp is running，则先停止ntp sever，在执行ntpdate</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>sudo<span class="w"> </span>service<span class="w"> </span>ntp<span class="w"> </span>stop
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># 客户端金庸systemd timesyncd服务</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>sudo<span class="w"> </span>timedatectl<span class="w"> </span>set-ntp<span class="w"> </span>off
+</span></code></pre></div>
+<h2 id="ifconfig">永久配置ifconfig<a class="headerlink" href="#ifconfig" title="Permanent link">&para;</a></h2>
+<p>局域网通信配置时有时需要写死ip，避免重复劳动</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Ubuntu 20.04环境下</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/netplan/01-network-manager-all.yaml
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># 在network里添加</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>network:
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>ethernets:
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>ens33:
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span>dhcp4:<span class="w"> </span><span class="nb">false</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span>addresses:<span class="w"> </span><span class="o">[</span><span class="m">169</span>.254.102.8/16<span class="o">]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span>gateway4:<span class="w"> </span><span class="m">169</span>.254.102.1
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="c1">#   nameservers:</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="c1">#     addresses: [1.1.1.1, 8.8.8.8]</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># 然后在终端应用该配置文件</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>sudo<span class="w"> </span>netplan<span class="w"> </span>apply
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># 或者在图形的设置里进行手动设置（类似windows）</span>
+</span></code></pre></div>
+<h2 id="linux">查看是否是linux系统由于内存溢出杀死了进程<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 查看log文件</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>egrep<span class="w"> </span>-i<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;killed process&#39;</span><span class="w"> </span>/var/log
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;kill|oom|out of memory&#39;</span>
+</span></code></pre></div>
+<h2 id="_3">查看进程里创建一个线程消耗虚存的大小<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">ulimit</span><span class="w"> </span>-a
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># 输出结果里有个  stack size就是分配的默认栈大小，ubuntu22.04虚拟机分配的是8192kbytes即8M</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 查看系统支持的最大线程数</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>cat<span class="w"> </span>/proc/sys/kernel/threads-max
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># 查看pid号数量，进程和线程都会消耗这个id号</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>cat<span class="w"> </span>/proc/sys/kernel/pid_max
 </span></code></pre></div>
 <h2 id="cpunuma">查看cpu处理器是否为NUMA架构<a class="headerlink" href="#cpunuma" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>numactl
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># 查看可用的内存节点信息与访问距离</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>numactl<span class="w"> </span>-H
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 查看numa内存分配策略:</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># 主要有MPOL_BIND(必须绑定的节点，不足即swap)、MPOL_INTERLEAVE(本地和远程均可)</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># MPOL_PREFERRED(优先指定节点，不择即选择离指定节点最近的节点)、MPOL_LOCAL(默认，优先本地，不足使用远程)</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># 可通过 #include &lt;numaif.h&gt; 的 long set_mempolicy(int mode, const unsigned long* nodemask, unsigned long maxnode) 设置内存策略</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>numactl<span class="w"> </span>-s
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># 查看各个numa节点的内存访问命中次数</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>numastat
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># 通过numactl将进程绑定到特定的内存节点, 下面是内存分配在0号numa节点，进程numatest.out运行在1号numa节点</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>numactl<span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">1</span><span class="w"> </span>./numatest.out
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>numactl
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># 查看可用的内存节点信息与访问距离</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>numactl<span class="w"> </span>-H
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># 查看numa内存分配策略:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># 主要有MPOL_BIND(必须绑定的节点，不足即swap)、MPOL_INTERLEAVE(本地和远程均可)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># MPOL_PREFERRED(优先指定节点，不择即选择离指定节点最近的节点)、MPOL_LOCAL(默认，优先本地，不足使用远程)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 可通过 #include &lt;numaif.h&gt; 的 long set_mempolicy(int mode, const unsigned long* nodemask, unsigned long maxnode) 设置内存策略</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>numactl<span class="w"> </span>-s
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># 查看各个numa节点的内存访问命中次数</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>numastat
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># 通过numactl将进程绑定到特定的内存节点, 下面是内存分配在0号numa节点，进程numatest.out运行在1号numa节点</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>numactl<span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">1</span><span class="w"> </span>./numatest.out
 </span></code></pre></div>
 <h2 id="cpu">按照进程名查看cpu占用等信息<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># sed -n &#39;1p&#39;是选择第一行，也可以用head -1代替</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>ps<span class="w"> </span>-ef<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>exe_name<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;1p&#39;</span><span class="k">)</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># sed -n &#39;1p&#39;是选择第一行，也可以用head -1代替</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>ps<span class="w"> </span>-ef<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>exe_name<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;1p&#39;</span><span class="k">)</span>
 </span></code></pre></div>
-<h2 id="_2">基准测试<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_4">基准测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>sysbench压力测试，可用于测试cpu性能、内存负载、磁盘io、多线程调度等</p>
 <h2 id="cpu_1">查看cpu负载<a class="headerlink" href="#cpu_1" title="Permanent link">&para;</a></h2>
 <h3 id="uptime">uptime<a class="headerlink" href="#uptime" title="Permanent link">&para;</a></h3>
@@ -3736,12 +3908,27 @@
 <p>查看total cpu、sidk、net、paging、system的负载</p>
 <h3 id="sar">sar<a class="headerlink" href="#sar" title="Permanent link">&para;</a></h3>
 <p><code>sar -n DEV 1 10</code> / <code>sar -u 1</code>等监测网卡负载</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mpstat<span class="w"> </span>-P<span class="w"> </span>ALL
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mpstat<span class="w"> </span>-P<span class="w"> </span>ALL
 </span></code></pre></div>
 <h3 id="pidstat">pidstat<a class="headerlink" href="#pidstat" title="Permanent link">&para;</a></h3>
 <p>查看进程的负载情况</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pidstat -u 5
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pidstat<span class="w"> </span>-u<span class="w"> </span><span class="m">5</span>
 </span></code></pre></div>
+<h3 id="_5">查看某进程占用内存<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>cat<span class="w"> </span>/proc/<span class="o">[</span>pid<span class="o">]</span>/statm
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># 会输出6个数据</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 48596 2208 1401 353 0 4980 0</span>
+</span></code></pre></div>
+<p>各个数据的含义：（一页默认4KB）
+|statm|meaning|reference|
+|:-:|:-:|:-:|
+|Size(pages)|任务虚拟地址空间的大小| VmSize / 4|
+|Resident(pages)|应用程序正在使用的物理内存的大小|VmRSS / 4|
+|Shared(pages)|进程共享页数||
+|Trs(pages)|程序所拥有的可执行虚拟内存的大小|VmExe / 4|
+|Lrs(pages)|被映像到任务的虚拟内存空间库的大小|VmLib / 4|
+|Drs(pages)|程序数据段和用户态的栈大小|(VmData + VmStk) / 4|
+|Dt(pages)|脏页数量||</p>
 <h2 id="stress">stress<a class="headerlink" href="#stress" title="Permanent link">&para;</a></h2>
 <p>压力测试工具，<strong>升级版：stress-ng。兼容stress</strong>。不用另写c++demo了</p>
 <ol>
@@ -3757,48 +3944,48 @@
 <li>-q, --quiet：程序在运行的过程中不输出信息</li>
 <li>-n, --dry-run：输出程序会做什么而并不实际执行相关的操作</li>
 </ol>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 模拟1个worker调用sync刷新内存缓冲区write到磁盘</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>stress<span class="w"> </span>-i<span class="w"> </span><span class="m">1</span><span class="w"> </span>--hdd<span class="w"> </span><span class="m">1</span><span class="w"> </span>--timeout<span class="w"> </span><span class="m">600</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># stress-ng命令举例</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>stress-ng<span class="w"> </span><span class="o">[</span>OPTION<span class="w"> </span><span class="o">[</span>ARG<span class="o">]]</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># 产生2个worker做圆周率算法压力</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>pi
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1">#产生2个worker迭代使用30多种不同的压力算法，包括pi, crc16, fft等</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>all
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1">#产生2个worker调用socket相关函数产生压力</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1">#产生2个worker读取tsc产生压力</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>stress-ng<span class="w"> </span>--tsc<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1">#stress-ng将压力指定到指定CPU上</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">4</span><span class="w"> </span>--taskset<span class="w"> </span><span class="m">0</span>-1,3
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 模拟1个worker调用sync刷新内存缓冲区write到磁盘</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>stress<span class="w"> </span>-i<span class="w"> </span><span class="m">1</span><span class="w"> </span>--hdd<span class="w"> </span><span class="m">1</span><span class="w"> </span>--timeout<span class="w"> </span><span class="m">600</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># stress-ng命令举例</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>stress-ng<span class="w"> </span><span class="o">[</span>OPTION<span class="w"> </span><span class="o">[</span>ARG<span class="o">]]</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># 产生2个worker做圆周率算法压力</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>pi
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">#产生2个worker迭代使用30多种不同的压力算法，包括pi, crc16, fft等</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>all
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1">#产生2个worker调用socket相关函数产生压力</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">2</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="c1">#产生2个worker读取tsc产生压力</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>stress-ng<span class="w"> </span>--tsc<span class="w"> </span><span class="m">2</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1">#stress-ng将压力指定到指定CPU上</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">4</span><span class="w"> </span>--taskset<span class="w"> </span><span class="m">0</span>-1,3
 </span></code></pre></div>
 <h2 id="iperf3">iperf3<a class="headerlink" href="#iperf3" title="Permanent link">&para;</a></h2>
 <p>测试网络吞吐量(默认使用tcp协议)</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># server端， 监控间隔10s，端口为5201</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>iperf3<span class="w"> </span>-s<span class="w"> </span>-i<span class="w"> </span><span class="m">10</span><span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># 客户端，测速时间5s，发送10个连接数，-R表示下载测试，-O忽略前4s的结果</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">5</span><span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-R<span class="w"> </span>-O<span class="w"> </span><span class="m">4</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># 客户端 udp，执行20s，每5s执行一次，传输数据包5G, --get-server-output表示显示服务端信息</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>iperf3<span class="w"> </span>-u<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">20</span><span class="w"> </span>-i<span class="w"> </span><span class="m">5</span><span class="w"> </span>--get-server-output
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 客户端 传输数据包5G，每7s显示一次</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-i<span class="w"> </span><span class="m">7</span><span class="w"> </span>-n<span class="w"> </span>5G
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># 纯纯测速</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># 服务端</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>iperf3<span class="w"> </span>-s
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c1"># 客户端，以GB/s输出，无限制比特率</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>server.ip<span class="w"> </span>-B<span class="w"> </span>client.ip<span class="w"> </span>-f<span class="w"> </span>G<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">[</span>-u<span class="o">]</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># server端， 监控间隔10s，端口为5201</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>iperf3<span class="w"> </span>-s<span class="w"> </span>-i<span class="w"> </span><span class="m">10</span><span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># 客户端，测速时间5s，发送10个连接数，-R表示下载测试，-O忽略前4s的结果</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">5</span><span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-R<span class="w"> </span>-O<span class="w"> </span><span class="m">4</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="c1"># 客户端 udp，执行20s，每5s执行一次，传输数据包5G, --get-server-output表示显示服务端信息</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>iperf3<span class="w"> </span>-u<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">20</span><span class="w"> </span>-i<span class="w"> </span><span class="m">5</span><span class="w"> </span>--get-server-output
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># 客户端 传输数据包5G，每7s显示一次</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-i<span class="w"> </span><span class="m">7</span><span class="w"> </span>-n<span class="w"> </span>5G
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c1"># 纯纯测速</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="c1"># 服务端</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>iperf3<span class="w"> </span>-s
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="c1"># 客户端，以GB/s输出，无限制比特率</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>server.ip<span class="w"> </span>-B<span class="w"> </span>client.ip<span class="w"> </span>-f<span class="w"> </span>G<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">[</span>-u<span class="o">]</span>
 </span></code></pre></div>
 <h2 id="iptables">iptables<a class="headerlink" href="#iptables" title="Permanent link">&para;</a></h2>
 <p>模拟丢包</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 丢弃来自tcp，ip为192.168.1.4的包</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>iptables<span class="w"> </span>-A<span class="w"> </span>INPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-s<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># 丢弃发送给192.168.1.4的tcp包</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>iptables<span class="w"> </span>-A<span class="w"> </span>OUTPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-d<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># 列出iptables当前配置项, 显示序号</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>iptables<span class="w"> </span>-nvL<span class="w"> </span>--line-numbers
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># 删除配置的规则，序号为OUTPUT的1</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>iptables<span class="w"> </span>-D<span class="w"> </span>OUTPUT<span class="w"> </span><span class="m">1</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>iptables<span class="w"> </span>-D<span class="w"> </span>INPUT<span class="w"> </span><span class="m">1</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 丢弃来自tcp，ip为192.168.1.4的包</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>iptables<span class="w"> </span>-A<span class="w"> </span>INPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-s<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># 丢弃发送给192.168.1.4的tcp包</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>iptables<span class="w"> </span>-A<span class="w"> </span>OUTPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-d<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1"># 列出iptables当前配置项, 显示序号</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>iptables<span class="w"> </span>-nvL<span class="w"> </span>--line-numbers
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 删除配置的规则，序号为OUTPUT的1</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>iptables<span class="w"> </span>-D<span class="w"> </span>OUTPUT<span class="w"> </span><span class="m">1</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>iptables<span class="w"> </span>-D<span class="w"> </span>INPUT<span class="w"> </span><span class="m">1</span>
 </span></code></pre></div>
 <h2 id="strace">strace<a class="headerlink" href="#strace" title="Permanent link">&para;</a></h2>
 <p>很强大，记得用，跟踪系统调用执行时间、跟踪特定系统调用read、write等</p>
@@ -3816,25 +4003,25 @@
 </ul>
 <h2 id="perf">perf<a class="headerlink" href="#perf" title="Permanent link">&para;</a></h2>
 <p>统计c++程序各个函数运行时间和调用次数</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 性能统计</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>perf<span class="w"> </span>record<span class="w"> </span>-e<span class="w"> </span>cpu-clock<span class="w"> </span>./test
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 分析报告</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>perf<span class="w"> </span>report
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 性能统计</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>perf<span class="w"> </span>record<span class="w"> </span>-e<span class="w"> </span>cpu-clock<span class="w"> </span>./test
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># 分析报告</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>perf<span class="w"> </span>report
 </span></code></pre></div>
 <p>进一步可以生成<a href="https://github.com/brendangregg/FlameGraph">火焰图</a>，使用步骤</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># perf 记录信息</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-F<span class="w"> </span><span class="m">99</span><span class="w"> </span>-a<span class="w"> </span>-g<span class="w"> </span>./a.out
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>sudo<span class="w"> </span>perf<span class="w"> </span>script<span class="w"> </span>&gt;<span class="w"> </span>out.perf
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>./stackcollapse-perf.pl<span class="w"> </span>out.perf<span class="w"> </span>&gt;<span class="w"> </span>out.folded
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>./flamegraph.pl<span class="w"> </span>out.folded<span class="w"> </span>&gt;<span class="w"> </span>kernel.svg
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># 最终使用游览器打开kernel.svg</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c1">## 好看的top</span>
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="sb">```</span>sh
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>htop
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># perf 记录信息</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-F<span class="w"> </span><span class="m">99</span><span class="w"> </span>-a<span class="w"> </span>-g<span class="w"> </span>./a.out
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>sudo<span class="w"> </span>perf<span class="w"> </span>script<span class="w"> </span>&gt;<span class="w"> </span>out.perf
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>./stackcollapse-perf.pl<span class="w"> </span>out.perf<span class="w"> </span>&gt;<span class="w"> </span>out.folded
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>./flamegraph.pl<span class="w"> </span>out.folded<span class="w"> </span>&gt;<span class="w"> </span>kernel.svg
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># 最终使用游览器打开kernel.svg</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1">## 好看的top</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="sb">```</span>sh
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>htop
 </span></code></pre></div>
-<h2 id="_3">系统检测工具<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_6">系统检测工具<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
 <li>tcpdump: 网络抓包</li>
 <li>lsof：列出所有打开的fd</li>
@@ -3844,42 +4031,42 @@
 <li>ss: 与netstat差不多，但性能比netstat好</li>
 <li>vmstat/ifstat/mpstat</li>
 </ul>
-<h2 id="_4">查看系统内存<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 以MB查看</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>free<span class="w"> </span>-m
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># 以GB查看</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>free<span class="w"> </span>-g
+<h2 id="_7">查看系统内存<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 以MB查看</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>free<span class="w"> </span>-m
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># 以GB查看</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>free<span class="w"> </span>-g
 </span></code></pre></div>
-<h2 id="_5">修改进程优先级<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>renice<span class="w"> </span>-n<span class="w"> </span><span class="o">[</span>number<span class="o">]</span><span class="w"> </span><span class="o">[</span>pid<span class="o">]</span>
+<h2 id="_8">修改进程优先级<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>renice<span class="w"> </span>-n<span class="w"> </span><span class="o">[</span>number<span class="o">]</span><span class="w"> </span><span class="o">[</span>pid<span class="o">]</span>
 </span></code></pre></div>
 <h2 id="shell">轮询调用shell命令<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 终端命令行轮询查看状态命令（while do）：</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="o">[</span>pid<span class="o">]</span><span class="p">;</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 终端命令行轮询查看状态命令（while do）：</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="o">[</span>pid<span class="o">]</span><span class="p">;</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
 </span></code></pre></div>
 <h2 id="addr2line">addr2line<a class="headerlink" href="#addr2line" title="Permanent link">&para;</a></h2>
 <p>根据cppcrash栈信息，定位对应so或可执行程序的行数（编译时加-g）</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>addr2line<span class="w"> </span>-C<span class="w"> </span>-f<span class="w"> </span>-e<span class="w"> </span><span class="o">[</span>.so/.exe/.out<span class="w"> </span>file<span class="o">]</span><span class="w"> </span><span class="o">[</span>crash<span class="w"> </span>pc<span class="o">]</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>addr2line<span class="w"> </span>-C<span class="w"> </span>-f<span class="w"> </span>-e<span class="w"> </span><span class="o">[</span>.so/.exe/.out<span class="w"> </span>file<span class="o">]</span><span class="w"> </span><span class="o">[</span>crash<span class="w"> </span>pc<span class="o">]</span>
 </span></code></pre></div>
 <h2 id="cfilt">c++filt<a class="headerlink" href="#cfilt" title="Permanent link">&para;</a></h2>
 <p>分析c++ 编译出的晦涩难懂的名称</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>c++filt<span class="w"> </span><span class="o">[</span>eg:<span class="w"> </span>_ZN5RkCam10CamHwIsp2020clearStaticCamHwInfoEv<span class="o">]</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>c++filt<span class="w"> </span><span class="o">[</span>eg:<span class="w"> </span>_ZN5RkCam10CamHwIsp2020clearStaticCamHwInfoEv<span class="o">]</span>
 </span></code></pre></div>
-<h2 id="_6">计数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<h2 id="_9">计数<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
 </span></code></pre></div>
 <h2 id="grep">grep<a class="headerlink" href="#grep" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 指定匹配</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;[...]|[...]&quot;</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1"># 指定排除</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;[...]\|[...]\|[...]&quot;</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1"># 输出上下文</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># 显示前10行</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>grep<span class="w"> </span>-A<span class="w"> </span><span class="m">10</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># 显示后10行</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>grep<span class="w"> </span>-B<span class="w"> </span><span class="m">10</span>
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="c1"># 显示前后10行</span>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>grep<span class="w"> </span>-C<span class="w"> </span><span class="m">10</span>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># 指定匹配</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;[...]|[...]&quot;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># 指定排除</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;[...]\|[...]\|[...]&quot;</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="c1"># 输出上下文</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="c1"># 显示前10行</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>grep<span class="w"> </span>-A<span class="w"> </span><span class="m">10</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1"># 显示后10行</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>grep<span class="w"> </span>-B<span class="w"> </span><span class="m">10</span>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c1"># 显示前后10行</span>
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>grep<span class="w"> </span>-C<span class="w"> </span><span class="m">10</span>
 </span></code></pre></div>
 
 
@@ -3935,13 +4122,13 @@
         
         
           
-          <a href="../unix/" class="md-footer__link md-footer__link--next" aria-label="Next: Unix">
+          <a href="../linux/" class="md-footer__link md-footer__link--next" aria-label="Next: Linux">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Unix
+                Linux
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3996,10 +4183,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.caa56a14.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
