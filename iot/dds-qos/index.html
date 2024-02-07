@@ -10,13 +10,13 @@
         <meta name="author" content="isobung">
       
       
-        <link rel="canonical" href="https://lip0041.github.io/notes/skills/">
+        <link rel="canonical" href="https://lip0041.github.io/iot/dds-qos/">
       
       
-        <link rel="prev" href="../shell/">
+        <link rel="prev" href="../../notes/windows/">
       
       
-        <link rel="next" href="../linux/">
+        <link rel="next" href="../ros2-cross-domain-communication/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Skills - lip0041</title>
+        <title>QoS - lip0041</title>
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#develop-skill" class="md-skip">
+        <a href="#dds-qos" class="md-skip">
           Skip to content
         </a>
       
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Skills
+              QoS
             
           </span>
         </div>
@@ -329,13 +329,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../git/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../notes/git/" class="md-tabs__link">
           
   
     
@@ -351,11 +349,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../iot/dds-qos/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -1056,10 +1056,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1082,12 +1080,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -1101,7 +1099,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Notes
@@ -1115,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../notes/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssh/" class="md-nav__link">
+      <a href="../../notes/ssh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1157,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+      <a href="../../notes/shell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1175,30 +1173,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Skills
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../notes/skills/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1207,308 +1185,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ntp" class="md-nav__link">
-    <span class="md-ellipsis">
-      部署NTP同步时间
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="部署NTP同步时间">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      服务端配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      客户端配置
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ifconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      永久配置ifconfig
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看是否是linux系统由于内存溢出杀死了进程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看进程里创建一个线程消耗虚存的大小
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpunuma" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看cpu处理器是否为NUMA架构
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      按照进程名查看cpu占用等信息
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      基准测试
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看cpu负载
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="查看cpu负载">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uptime" class="md-nav__link">
-    <span class="md-ellipsis">
-      uptime
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mpstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      mpstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      dstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sar" class="md-nav__link">
-    <span class="md-ellipsis">
-      sar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pidstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      pidstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看某进程占用内存
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stress" class="md-nav__link">
-    <span class="md-ellipsis">
-      stress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iperf3" class="md-nav__link">
-    <span class="md-ellipsis">
-      iperf3
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iptables" class="md-nav__link">
-    <span class="md-ellipsis">
-      iptables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strace" class="md-nav__link">
-    <span class="md-ellipsis">
-      strace
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tcpdump" class="md-nav__link">
-    <span class="md-ellipsis">
-      tcpdump
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perf" class="md-nav__link">
-    <span class="md-ellipsis">
-      perf
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      系统检测工具
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看系统内存
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      修改进程优先级
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      轮询调用shell命令
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addr2line" class="md-nav__link">
-    <span class="md-ellipsis">
-      addr2line
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cfilt" class="md-nav__link">
-    <span class="md-ellipsis">
-      c++filt
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      计数
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#grep" class="md-nav__link">
-    <span class="md-ellipsis">
-      grep
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1521,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/" class="md-nav__link">
+      <a href="../../notes/linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1542,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
+      <a href="../../notes/windows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1567,8 +1243,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1583,12 +1261,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1602,7 +1280,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             IoT
@@ -1613,10 +1291,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../iot/dds-qos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    QoS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1625,6 +1323,248 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qos" class="md-nav__link">
+    <span class="md-ellipsis">
+      QoS标准规范
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QoS标准规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-user_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. USER_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-topic_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. TOPIC_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-group_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. GROUP_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-durability" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. DURABILITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-durability_service" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. DURABILITY_SERVICE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. PRESENTATION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-deadline" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. DEADLINE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-latency_budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. LATENCY_BUDGET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. OWNERSHIP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ownership_strength" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. OWNERSHIP_STRENGTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-liveliness" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. LIVELINESS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-time_based_filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. TIME_BASED_FILTER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. PARTITION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. RELIABILITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-transport_priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. TRANSPORT_PRIORITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-lifespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. LIFESPAN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-destination_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. DESTINATION_ORDER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. HISTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-resource_limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. RESOURCE_LIMITS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-entity_factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. ENTITY_FACTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-writer_data_lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. WRITER_DATA_LIFECYCLE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-reader_data_lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. READER_DATA_LIFECYCLE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      附录
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1637,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iot/ros2-cross-domain-communication/" class="md-nav__link">
+      <a href="../ros2-cross-domain-communication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3621,282 +3561,222 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ntp" class="md-nav__link">
+  <a href="#qos" class="md-nav__link">
     <span class="md-ellipsis">
-      部署NTP同步时间
+      QoS标准规范
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="部署NTP同步时间">
+    <nav class="md-nav" aria-label="QoS标准规范">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-user_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. USER_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-topic_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. TOPIC_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-group_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. GROUP_DATA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-durability" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. DURABILITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-durability_service" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. DURABILITY_SERVICE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. PRESENTATION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-deadline" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. DEADLINE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-latency_budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. LATENCY_BUDGET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. OWNERSHIP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ownership_strength" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. OWNERSHIP_STRENGTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-liveliness" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. LIVELINESS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-time_based_filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. TIME_BASED_FILTER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. PARTITION
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. RELIABILITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-transport_priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. TRANSPORT_PRIORITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-lifespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. LIFESPAN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-destination_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. DESTINATION_ORDER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. HISTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-resource_limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. RESOURCE_LIMITS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-entity_factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. ENTITY_FACTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-writer_data_lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. WRITER_DATA_LIFECYCLE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-reader_data_lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. READER_DATA_LIFECYCLE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      服务端配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      客户端配置
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ifconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      永久配置ifconfig
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看是否是linux系统由于内存溢出杀死了进程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看进程里创建一个线程消耗虚存的大小
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpunuma" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看cpu处理器是否为NUMA架构
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      按照进程名查看cpu占用等信息
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      基准测试
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看cpu负载
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="查看cpu负载">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uptime" class="md-nav__link">
-    <span class="md-ellipsis">
-      uptime
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mpstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      mpstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      dstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sar" class="md-nav__link">
-    <span class="md-ellipsis">
-      sar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pidstat" class="md-nav__link">
-    <span class="md-ellipsis">
-      pidstat
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看某进程占用内存
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stress" class="md-nav__link">
-    <span class="md-ellipsis">
-      stress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iperf3" class="md-nav__link">
-    <span class="md-ellipsis">
-      iperf3
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iptables" class="md-nav__link">
-    <span class="md-ellipsis">
-      iptables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strace" class="md-nav__link">
-    <span class="md-ellipsis">
-      strace
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tcpdump" class="md-nav__link">
-    <span class="md-ellipsis">
-      tcpdump
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perf" class="md-nav__link">
-    <span class="md-ellipsis">
-      perf
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      系统检测工具
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看系统内存
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      修改进程优先级
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      轮询调用shell命令
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addr2line" class="md-nav__link">
-    <span class="md-ellipsis">
-      addr2line
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cfilt" class="md-nav__link">
-    <span class="md-ellipsis">
-      c++filt
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      计数
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#grep" class="md-nav__link">
-    <span class="md-ellipsis">
-      grep
+      附录
     </span>
   </a>
   
@@ -3917,7 +3797,7 @@
                   
 
   
-    <a href="https://github.com/lip0041/notes/edit/main/docs/notes/skills.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/edit/main/docs/iot/dds-qos.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -3926,263 +3806,582 @@
     
       
     
-    <a href="https://github.com/lip0041/notes/raw/main/docs/notes/skills.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/raw/main/docs/iot/dds-qos.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="develop-skill">Develop Skill<a class="headerlink" href="#develop-skill" title="Permanent link">&para;</a></h1>
-<h2 id="ntp">部署NTP同步时间<a class="headerlink" href="#ntp" title="Permanent link">&para;</a></h2>
-<p>多机时间戳同步需要部署NTP服务器和客户端</p>
-<h3 id="_1">服务端配置<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ntp<span class="w"> </span>ntpdate
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># 修改配置文件</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/ntp.conf
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 在末尾添加</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>restrict<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span><span class="w"> </span>mask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span>nomodify
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>server<span class="w"> </span><span class="m">127</span>.127.1.0
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>fudge<span class="w"> </span><span class="m">127</span>.127.1.0<span class="w"> </span>stratum<span class="w"> </span><span class="m">10</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 关闭防火墙(不清楚是否是必须的)</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>disable
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 重启ntp server</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>sudo<span class="w"> </span>service<span class="w"> </span>ntp<span class="w"> </span>restart
+<h1 id="dds-qos">DDS QoS<a class="headerlink" href="#dds-qos" title="Permanent link">&para;</a></h1>
+<p>QoS(Quality of Service)是一组控制DDS(Data-Distribution Service)服务行为某些方面的特征，QoS由各个派生自QosPolicy的QoS策略对象组成。</p>
+<p><img alt="DDS-QOS" src="../../assets/iot/qos.png" /></p>
+<h2 id="qos">QoS标准规范<a class="headerlink" href="#qos" title="Permanent link">&para;</a></h2>
+<p>DDS的规范中规定了QoS的22种QoS策略，每种策略可以应用在不同的角色上，而针对某个角色，可以单独使用某一种QoS，也可以组合使用多种QoS策略。</p>
+<h3 id="1-user_data">1. USER_DATA<a class="headerlink" href="#1-user_data" title="Permanent link">&para;</a></h3>
+<p>允许应用程序在已创建的Entity对象上附加自定义信息，以便当远程的应用程序发现自身时，可以利用自己提供的自定义信息进行一些操作，例如可以提供利用这些信息进行身份验证等安全操作。</p>
+<p><code>USER_DATA</code>的数据成员是一个字符数组（默认为空），用于存放提供的附加信息，其可以应用于所有DDS实体，且可以在已启动的实体上进行修改。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// FastDDS的实现</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">UserDataQosPolicy</span><span class="w"> </span><span class="n">user_data</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vec</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">vec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">user_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">();</span><span class="w"> </span><span class="c1">// Getter Function</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">//Add two new octets to user data vector</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">user_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span><span class="w"> </span><span class="c1">//Setter Function</span>
 </span></code></pre></div>
-<h3 id="_2">客户端配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># （客户端应该不需要安装ntp）</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ntp<span class="w"> </span>ntpdate
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 修改配置文件</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/ntp.conf
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 在末尾添加</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>server<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span><span class="w"> </span>prefer
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 客户端同步服务端时间戳</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>sudo<span class="w"> </span>ntpdate<span class="w"> </span><span class="o">[</span>server-ip<span class="o">]</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># 若上面命令报ntp is running，则先停止ntp sever，在执行ntpdate</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>sudo<span class="w"> </span>service<span class="w"> </span>ntp<span class="w"> </span>stop
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># 客户端金庸systemd timesyncd服务</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>sudo<span class="w"> </span>timedatectl<span class="w"> </span>set-ntp<span class="w"> </span>off
+<h3 id="2-topic_data">2. TOPIC_DATA<a class="headerlink" href="#2-topic_data" title="Permanent link">&para;</a></h3>
+<p>允许应用程序在已创建的Topic上附加自定义信息，这些信息同样可以在被远端应用发现时被访问和使用。</p>
+<p><code>TOPIC_DATA</code>与<code>USER_DATA</code>类似，数据成员是默认为空的字符数组，涉及Topic实体，且可以在已创建的实体上进行修改。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">TopicDataQosPolicy</span><span class="w"> </span><span class="n">topic_data</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vec</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">vec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">topic_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">();</span><span class="w"> </span><span class="c1">// Getter Function</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">//Add two new octets to topic data vector</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">topic_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span><span class="w"> </span><span class="c1">//Setter Function</span>
 </span></code></pre></div>
-<h2 id="ifconfig">永久配置ifconfig<a class="headerlink" href="#ifconfig" title="Permanent link">&para;</a></h2>
-<p>局域网通信配置时有时需要写死ip，避免重复劳动</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Ubuntu 20.04环境下</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/netplan/01-network-manager-all.yaml
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># 在network里添加</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>network:
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>ethernets:
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>ens33:
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span>dhcp4:<span class="w"> </span><span class="nb">false</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span>addresses:<span class="w"> </span><span class="o">[</span><span class="m">169</span>.254.102.8/16<span class="o">]</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span>gateway4:<span class="w"> </span><span class="m">169</span>.254.102.1
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="c1">#   nameservers:</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="c1">#     addresses: [1.1.1.1, 8.8.8.8]</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># 然后在终端应用该配置文件</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>sudo<span class="w"> </span>netplan<span class="w"> </span>apply
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># 或者在图形的设置里进行手动设置（类似windows）</span>
+<h3 id="3-group_data">3. GROUP_DATA<a class="headerlink" href="#3-group_data" title="Permanent link">&para;</a></h3>
+<p>允许应用程序在已创建的Publisher和Subscriber上附加自定义信息，并通过内置的topic模式进行传播。</p>
+<p><code>GROUP_DATA</code>与上述的<code>TOPIC_DATA</code>和<code>USER_DATA</code>类似，数据成员是默认为空的字符数组，但仅可应用于Publisher和Subscriber实体，且可以在已启动的实体上进行修改。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">GroupDataQosPolicy</span><span class="w"> </span><span class="n">group_data</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">//The GroupDataQosPolicy is default constructed with an empty collection</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">//Collection is a private member so you need to use getters and setters to access</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">//Add data to the collection</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vec</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">vec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">group_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">();</span><span class="w"> </span><span class="c1">// Getter function</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">//Add two new octets to group data vector</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">eprosima</span><span class="o">::</span><span class="n">fastrtps</span><span class="o">::</span><span class="n">rtps</span><span class="o">::</span><span class="n">octet</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">group_data</span><span class="p">.</span><span class="n">data_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span><span class="w"> </span><span class="c1">//Setter function</span>
 </span></code></pre></div>
-<h2 id="linux">查看是否是linux系统由于内存溢出杀死了进程<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 查看log文件</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>egrep<span class="w"> </span>-i<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;killed process&#39;</span><span class="w"> </span>/var/log
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;kill|oom|out of memory&#39;</span>
-</span></code></pre></div>
-<h2 id="_3">查看进程里创建一个线程消耗虚存的大小<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">ulimit</span><span class="w"> </span>-a
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># 输出结果里有个  stack size就是分配的默认栈大小，ubuntu22.04虚拟机分配的是8192kbytes即8M</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 查看系统支持的最大线程数</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>cat<span class="w"> </span>/proc/sys/kernel/threads-max
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># 查看pid号数量，进程和线程都会消耗这个id号</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>cat<span class="w"> </span>/proc/sys/kernel/pid_max
-</span></code></pre></div>
-<h2 id="cpunuma">查看cpu处理器是否为NUMA架构<a class="headerlink" href="#cpunuma" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>numactl
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># 查看可用的内存节点信息与访问距离</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>numactl<span class="w"> </span>-H
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># 查看numa内存分配策略:</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># 主要有MPOL_BIND(必须绑定的节点，不足即swap)、MPOL_INTERLEAVE(本地和远程均可)</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># MPOL_PREFERRED(优先指定节点，不择即选择离指定节点最近的节点)、MPOL_LOCAL(默认，优先本地，不足使用远程)</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 可通过 #include &lt;numaif.h&gt; 的 long set_mempolicy(int mode, const unsigned long* nodemask, unsigned long maxnode) 设置内存策略</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>numactl<span class="w"> </span>-s
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># 查看各个numa节点的内存访问命中次数</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>numastat
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># 通过numactl将进程绑定到特定的内存节点, 下面是内存分配在0号numa节点，进程numatest.out运行在1号numa节点</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>numactl<span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">1</span><span class="w"> </span>./numatest.out
-</span></code></pre></div>
-<h2 id="cpu">按照进程名查看cpu占用等信息<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># sed -n &#39;1p&#39;是选择第一行，也可以用head -1代替</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>ps<span class="w"> </span>-ef<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>exe_name<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;1p&#39;</span><span class="k">)</span>
-</span></code></pre></div>
-<h2 id="_4">基准测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>sysbench压力测试，可用于测试cpu性能、内存负载、磁盘io、多线程调度等</p>
-<h2 id="cpu_1">查看cpu负载<a class="headerlink" href="#cpu_1" title="Permanent link">&para;</a></h2>
-<h3 id="uptime">uptime<a class="headerlink" href="#uptime" title="Permanent link">&para;</a></h3>
-<p>查看系统平均负载</p>
-<h3 id="mpstat">mpstat<a class="headerlink" href="#mpstat" title="Permanent link">&para;</a></h3>
-<p>查看各个cpu的负载，可以看到是否时io密集型（iowait为0则为cpu密集型）</p>
-<h3 id="dstat">dstat<a class="headerlink" href="#dstat" title="Permanent link">&para;</a></h3>
-<p>查看total cpu、sidk、net、paging、system的负载</p>
-<h3 id="sar">sar<a class="headerlink" href="#sar" title="Permanent link">&para;</a></h3>
-<p><code>sar -n DEV 1 10</code> / <code>sar -u 1</code>等监测网卡负载</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mpstat<span class="w"> </span>-P<span class="w"> </span>ALL
-</span></code></pre></div>
-<h3 id="pidstat">pidstat<a class="headerlink" href="#pidstat" title="Permanent link">&para;</a></h3>
-<p>查看进程的负载情况</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pidstat<span class="w"> </span>-u<span class="w"> </span><span class="m">5</span>
-</span></code></pre></div>
-<h3 id="_5">查看某进程占用内存<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>cat<span class="w"> </span>/proc/<span class="o">[</span>pid<span class="o">]</span>/statm
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># 会输出6个数据</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 48596 2208 1401 353 0 4980 0</span>
-</span></code></pre></div>
-<p>各个数据的含义：（一页默认4KB）
-|statm|meaning|reference|
-|:-:|:-:|:-:|
-|Size(pages)|任务虚拟地址空间的大小| VmSize / 4|
-|Resident(pages)|应用程序正在使用的物理内存的大小|VmRSS / 4|
-|Shared(pages)|进程共享页数||
-|Trs(pages)|程序所拥有的可执行虚拟内存的大小|VmExe / 4|
-|Lrs(pages)|被映像到任务的虚拟内存空间库的大小|VmLib / 4|
-|Drs(pages)|程序数据段和用户态的栈大小|(VmData + VmStk) / 4|
-|Dt(pages)|脏页数量||</p>
-<h2 id="stress">stress<a class="headerlink" href="#stress" title="Permanent link">&para;</a></h2>
-<p>压力测试工具，<strong>升级版：stress-ng。兼容stress</strong>。不用另写c++demo了</p>
+<h3 id="4-durability">4. DURABILITY<a class="headerlink" href="#4-durability" title="Permanent link">&para;</a></h3>
+<p><code>DataWriter</code>可以在网络中无<code>DataReader</code>时通过<code>Topic</code>发送消息，这样在<code>DataReader</code>加入<code>Topic</code>时就可能在<code>Topic</code>中已写入了一些该reader可能需要的数据信息。</p>
+<p><code>DURABILITY</code>定义了在<code>DataReader</code>加入前已存在于<code>Topic</code>的数据样本的处理行为，其包含一个<code>DurabilityQosPolicyKind</code>类型的<code>kind</code>变量。涉及Toipc、
+DataReader、DataWriter实体，且不可对已启动的实体进行修改。</p>
+<blockquote>
+<p>若想让<code>DataReader</code>接收到加入之前的数据消息，除了设置<code>DurabilityQosPolicy</code>外，还需要将<code>RelibilityQosPolicy</code>设置为<code>RELIABLE_RELIABILITY_QOS</code>。</p>
+</blockquote>
+<p>DurabilityQosPolicyKind：</p>
 <ol>
-<li>-c, --cpu N：产生N个进程，循环调用sqrt产生cpu压力</li>
-<li>-i, --io N：产生N个进程，循环调用sync将内存缓冲区写到磁盘上，产生io压力。如果缓冲区内数据较少，写到磁盘中的数据也较少，不会产生IO压力。
-在SSD磁盘环境中尤为明显，很可能iowait总是0，却因为大量调用系统调用sync，导致系统CPU使用率sys 升高。</li>
-<li>-m, --vm N：产生N个进程，循环调用malloc/free进行内存分配和释放。（--vm-bytes B:指定分配内存大小；--vm-stride B:不断给部分内存赋值，
-让COW发生；--vm-hang N:分配到内存的进程休眠N秒后，再释放内存；--vm-keep:一直占用内存）</li>
-<li>-d, --hdd N：产生N个不断执行write和unlink函数的进程(创建文件，写入内容，删除文件)。（--hdd-bytes B：指定文件大小）</li>
-<li>–hdd-noclean：不要将写入随机ASCII数据的文件Unlink</li>
-<li>-t, --timeout N：在N秒后结束程序</li>
-<li>–backoff N：等待N微秒后开始运行</li>
-<li>-q, --quiet：程序在运行的过程中不输出信息</li>
-<li>-n, --dry-run：输出程序会做什么而并不实际执行相关的操作</li>
+<li>VOLATILE_DURABILITY_QOS: 服务不会为任何未匹配的<code>DataReader</code>保留先前的数据，新加入的<code>DataReader</code>仅会接收到其加入匹配之后的数据信息。</li>
+<li>TRANSIENT_LOCAL_DURABILITY_QOS: 服务仅会将生命周期小于<code>DataWriter</code>的数据保留在<code>DataWriter</code>的内存中。</li>
+<li>TRANSIENT_DURABILITY_QOS: 与<code>TRANSIENT_LOCAL_DURABILITY_QOS</code>类似，服务仅会将数保留在内存中，区别是数据的保留时长与<code>DataWriter</code>无关。</li>
+<li>PERSISENT_DURABILITY_QOS: 服务会将数据永久性保存下来，所以在服务重启时数据仍可恢复。</li>
 </ol>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 模拟1个worker调用sync刷新内存缓冲区write到磁盘</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>stress<span class="w"> </span>-i<span class="w"> </span><span class="m">1</span><span class="w"> </span>--hdd<span class="w"> </span><span class="m">1</span><span class="w"> </span>--timeout<span class="w"> </span><span class="m">600</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># stress-ng命令举例</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>stress-ng<span class="w"> </span><span class="o">[</span>OPTION<span class="w"> </span><span class="o">[</span>ARG<span class="o">]]</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># 产生2个worker做圆周率算法压力</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>pi
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">#产生2个worker迭代使用30多种不同的压力算法，包括pi, crc16, fft等</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">2</span><span class="w"> </span>--cpu-method<span class="w"> </span>all
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1">#产生2个worker调用socket相关函数产生压力</span>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="c1">#产生2个worker读取tsc产生压力</span>
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>stress-ng<span class="w"> </span>--tsc<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1">#stress-ng将压力指定到指定CPU上</span>
-</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>stress-ng<span class="w"> </span>--sock<span class="w"> </span><span class="m">4</span><span class="w"> </span>--taskset<span class="w"> </span><span class="m">0</span>-1,3
+<p>默认情况下，<code>DataReader</code>是<code>VOLATILE_DURABILITY_QOS</code>, <code>DataWriter</code>是<code>TRANSIENT_LOCAL_DURABILITY_QOS</code>。<code>DataWriter</code>的<code>kind</code>必须大于等于<code>DataReader</code>的<code>kind</code>，
+否则将会违背兼容性规则导致服务通信无法建立。</p>
+<blockquote>
+<p><code>VOLATILE_DURABILITY_QOS</code> &lt; <code>TRANSIENT_LOCAL_DURABILITY_QOS</code> &lt; <code>TRANSIENT_DURABILITY_QOS</code> &lt; <code>PERSISENT_DURABILITY_QOS</code></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">DataWriter kind</th>
+<th style="text-align: center;">DataReader kind</th>
+<th style="text-align: center;">Compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">VOLATILE_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_LOCAL_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">TRANSIENT_DURABILITY_QOS</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">// 其中 PERSISENT_DURABILITY_QOS 未实现</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">DurabilityQosPolicy</span><span class="w"> </span><span class="n">durability</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">//The DurabilityQosPolicy is default constructed with kind = VOLATILE_DURABILITY_QOS</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">//Change the kind to TRANSIENT_LOCAL_DURABILITY_QOS</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">durability</span><span class="p">.</span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRANSIENT_LOCAL_DURABILITY_QOS</span><span class="p">;</span>
 </span></code></pre></div>
-<h2 id="iperf3">iperf3<a class="headerlink" href="#iperf3" title="Permanent link">&para;</a></h2>
-<p>测试网络吞吐量(默认使用tcp协议)</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># server端， 监控间隔10s，端口为5201</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>iperf3<span class="w"> </span>-s<span class="w"> </span>-i<span class="w"> </span><span class="m">10</span><span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># 客户端，测速时间5s，发送10个连接数，-R表示下载测试，-O忽略前4s的结果</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">5</span><span class="w"> </span>-P<span class="w"> </span><span class="m">10</span><span class="w"> </span>-R<span class="w"> </span>-O<span class="w"> </span><span class="m">4</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="c1"># 客户端 udp，执行20s，每5s执行一次，传输数据包5G, --get-server-output表示显示服务端信息</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>iperf3<span class="w"> </span>-u<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-t<span class="w"> </span><span class="m">20</span><span class="w"> </span>-i<span class="w"> </span><span class="m">5</span><span class="w"> </span>--get-server-output
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># 客户端 传输数据包5G，每7s显示一次</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>x.x.x.x<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span><span class="w"> </span>-i<span class="w"> </span><span class="m">7</span><span class="w"> </span>-n<span class="w"> </span>5G
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c1"># 纯纯测速</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="c1"># 服务端</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>iperf3<span class="w"> </span>-s
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="c1"># 客户端，以GB/s输出，无限制比特率</span>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>iperf3<span class="w"> </span>-c<span class="w"> </span>server.ip<span class="w"> </span>-B<span class="w"> </span>client.ip<span class="w"> </span>-f<span class="w"> </span>G<span class="w"> </span>-b<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">[</span>-u<span class="o">]</span>
+<h3 id="5-durability_service">5. DURABILITY_SERVICE<a class="headerlink" href="#5-durability_service" title="Permanent link">&para;</a></h3>
+<p>定义当<code>DURABILITY</code>设置为<code>TRANSIENT</code>或<code>PERSISTENT</code>时<code>DurabilityService</code>的配置信息，包括<code>HistoryQosPolicy</code>和<code>ResourceLimitsQosPolicy</code>。</p>
+<p><code>DURABILITY_SERVICE</code>涉及Topic和DataWriter，且不能对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>service_cleanup_delay: 控制服务何时能够删除相关数据实例的所有信息，默认为0。</li>
+<li>history_kind: 设置<code>HistoryQosPolicy</code>中的类型，默认为<code>KEEP_LAST</code>。</li>
+<li>history_depth: 与<code>history_kind</code>搭配使用，当<code>history_kind=KEEP_LAST</code>时，规定最大可保存的数据数量，默认为1。</li>
+<li>max_samples: 设置<code>ResourceLimitesQosPolicy</code>中的最大数据数量，默认无限制。</li>
+<li>max_instances: 设置<code>ResourceLimitesQosPolicy</code>中的最大实例数，默认无限制。</li>
+<li>max_samples_per_instance: 设置<code>ResourceLimitesQosPolicy</code>中的每个实例的最大数据数量，默认无限制。</li>
+</ol>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// FastDDS暂未实现</span>
 </span></code></pre></div>
-<h2 id="iptables">iptables<a class="headerlink" href="#iptables" title="Permanent link">&para;</a></h2>
-<p>模拟丢包</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 丢弃来自tcp，ip为192.168.1.4的包</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>iptables<span class="w"> </span>-A<span class="w"> </span>INPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-s<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># 丢弃发送给192.168.1.4的tcp包</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>iptables<span class="w"> </span>-A<span class="w"> </span>OUTPUT<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-d<span class="w"> </span><span class="m">192</span>.168.1.4<span class="w"> </span>-j<span class="w"> </span>DROP
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1"># 列出iptables当前配置项, 显示序号</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>iptables<span class="w"> </span>-nvL<span class="w"> </span>--line-numbers
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 删除配置的规则，序号为OUTPUT的1</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>iptables<span class="w"> </span>-D<span class="w"> </span>OUTPUT<span class="w"> </span><span class="m">1</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>iptables<span class="w"> </span>-D<span class="w"> </span>INPUT<span class="w"> </span><span class="m">1</span>
+<h3 id="6-presentation">6. PRESENTATION<a class="headerlink" href="#6-presentation" title="Permanent link">&para;</a></h3>
+<p>定义对数据实例更改的样本呈现给订阅应用程序的方式，它控制对数据实例的更改可以相互依赖的程度，以及可以传播和维护的依赖关系类型。</p>
+<p><code>PRESENTATION</code>涉及Publisher和Subscriber，且不能对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>access_scope: 规定跨越实体可以保留更改顺序和一致性的最大范围，默认为<code>INSTANCE</code>。<ol>
+<li>INSTANCE: 范围只跨越一个实例，表示对一个实例的更改不会与对任何其他实例的更改相一致或有序。</li>
+<li>TOPIC: 范围覆盖同一个<code>DataWriter</code>或<code>DataReader</code>的所有实例。</li>
+<li>GROUP: 范围覆盖同一个<code>Publisher</code>或<code>Subscriber</code>中属于<code>DataWriter</code>或<code>DataReader</code>的所有实例。</li>
+</ol>
+</li>
+<li>coherent_access: 规定是否在发布端保留所作更改的分组，以便在订阅端作为单元接收，默认为false。</li>
+<li>ordered_access: 规定是否在订阅端以和发布端一致的顺序查看更改，默认为false。</li>
+</ol>
+<p>其中<code>PRESENTATION</code>在Publisher和Subcriber侧有兼容性要求，即Publisher的<code>access_scope</code>必须大于等于Subscriber的<code>access_scope</code>，且当<code>coherent_access</code>和
+<code>ordered_access</code>在Publisher端开启，则Subscriber端也必须启动相应的配置。</p>
+<blockquote>
+<p><code>INSTANCE</code> &lt; <code>TOPIC</code> &lt; <code>GROUP</code></p>
+</blockquote>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// FastDDS暂未实现</span>
 </span></code></pre></div>
-<h2 id="strace">strace<a class="headerlink" href="#strace" title="Permanent link">&para;</a></h2>
-<p>很强大，记得用，跟踪系统调用执行时间、跟踪特定系统调用read、write等</p>
-<h2 id="tcpdump">tcpdump<a class="headerlink" href="#tcpdump" title="Permanent link">&para;</a></h2>
-<p>抓包程序，常用的选项有</p>
-<ul>
-<li>-i 指定要捕获的目标网卡名，通过ifconfig获取，any表示捕获所有网卡</li>
-<li>-w 将捕获的包原始信息（不解析、也不输出）写入文件中，后跟文件名</li>
-<li>-vv 详细显示抓包信息</li>
-<li>-n不解析域名，直接显示ip；-nn不解析域名和端口。（不解析还会提高抓取效率）</li>
-<li>-s 0 tcpdump默认截取前96字节内容，写0表示截取报文全部内容</li>
-<li>host/src/dst过滤主机ip</li>
-<li>tcp 只抓取tcp包</li>
-<li>udp 同上</li>
-</ul>
-<h2 id="perf">perf<a class="headerlink" href="#perf" title="Permanent link">&para;</a></h2>
-<p>统计c++程序各个函数运行时间和调用次数</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 性能统计</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>perf<span class="w"> </span>record<span class="w"> </span>-e<span class="w"> </span>cpu-clock<span class="w"> </span>./test
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># 分析报告</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>perf<span class="w"> </span>report
+<h3 id="7-deadline">7. DEADLINE<a class="headerlink" href="#7-deadline" title="Permanent link">&para;</a></h3>
+<p>定义发布端提供新数据或接收端接收到新数据的最长期限，超过期限则会触发告警。</p>
+<p><code>DEADLINE</code>涉及Topic、DataReader和DataWriter，且可以对已启动的实体进行修改，其包含一个<code>period</code>的成员，表示这个deadline，默认表示无穷。</p>
+<p><code>DEADLINE</code>对于DataWriter和DataReader同样有兼容性规则，即DataWriter侧的period必须小于等于DataReader侧的period。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">DeadlineQosPolicy</span><span class="w"> </span><span class="n">deadline</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">//The DeadlineQosPolicy is default constructed with an infinite period.</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1">//Change the period to 1 second</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">deadline</span><span class="p">.</span><span class="n">period</span><span class="p">.</span><span class="n">seconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">deadline</span><span class="p">.</span><span class="n">period</span><span class="p">.</span><span class="n">nanosec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span></code></pre></div>
-<p>进一步可以生成<a href="https://github.com/brendangregg/FlameGraph">火焰图</a>，使用步骤</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># perf 记录信息</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-F<span class="w"> </span><span class="m">99</span><span class="w"> </span>-a<span class="w"> </span>-g<span class="w"> </span>./a.out
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>sudo<span class="w"> </span>perf<span class="w"> </span>script<span class="w"> </span>&gt;<span class="w"> </span>out.perf
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>./stackcollapse-perf.pl<span class="w"> </span>out.perf<span class="w"> </span>&gt;<span class="w"> </span>out.folded
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>./flamegraph.pl<span class="w"> </span>out.folded<span class="w"> </span>&gt;<span class="w"> </span>kernel.svg
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># 最终使用游览器打开kernel.svg</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1">## 好看的top</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="sb">```</span>sh
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>htop
+<h3 id="8-latency_budget">8. LATENCY_BUDGET<a class="headerlink" href="#8-latency_budget" title="Permanent link">&para;</a></h3>
+<p>定义从数据被写入直到数据被插入到接收端缓存并收到通知的最大可接受的延迟时间。</p>
+<p><code>LATENCY_BUDGET</code>涉及Topic、DataReader和DataWriter，且可以对已启动的实体进行修改，其包含一个<code>duration</code>的成员，默认为0，表示该延迟应当最小化。</p>
+<p><code>LATENCY_BUDGET</code>对于DataWriter和DataReader同样有兼容性规则，即DataWriter侧的duration必须小于等于DataReader侧的duration。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">// FastDDS暂未实现</span>
 </span></code></pre></div>
-<h2 id="_6">系统检测工具<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ul>
-<li>tcpdump: 网络抓包</li>
-<li>lsof：列出所有打开的fd</li>
-<li>nc：可用于快速模拟网络客户端、服务端对网络数据发送接收的处理，进行调试</li>
-<li>strace：用于跟踪程序运行的系统调用和接受的信号</li>
-<li>netstat：网络连接、路由等信息</li>
-<li>ss: 与netstat差不多，但性能比netstat好</li>
-<li>vmstat/ifstat/mpstat</li>
-</ul>
-<h2 id="_7">查看系统内存<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 以MB查看</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>free<span class="w"> </span>-m
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># 以GB查看</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>free<span class="w"> </span>-g
+<h3 id="9-ownership">9. OWNERSHIP<a class="headerlink" href="#9-ownership" title="Permanent link">&para;</a></h3>
+<p>定义是否允许多个DataWriter向同一个实例中写入数据或多个DataReader获取同一个实例的数据以及如何控制这些动作。</p>
+<p><code>OWNERSHIP</code>涉及Topic、DataReader和DataWriter，且不能对已启动的实体进行修改，其包含一个类型为<code>OwnershipQosPolicyKind</code>的<code>kind</code>的成员，默认为<code>SHARED</code>。</p>
+<p>OwnershipQosPolicyKind:</p>
+<ol>
+<li>SHARED_OWNERSHIP_QOS: 允许多个实体共享同一数据实例的发布权和订阅权。</li>
+<li>EXCLUSIVE_OWNERSHIP_QOS: 仅允许一个实体拥有某个数据实例的发布权和订阅权。</li>
+</ol>
+<p><code>OWNERSHIP</code>对于DataWriter和DataReader同样有兼容性规则，即DataWriter与DataReader的kind必须相同。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">OwnershipQosPolicy</span><span class="w"> </span><span class="n">ownership</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1">//The OwnershipQosPolicy is default constructed with kind = SHARED.</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1">//Change the kind to EXCLUSIVE</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">ownership</span><span class="p">.</span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXCLUSIVE_OWNERSHIP_QOS</span><span class="p">;</span>
 </span></code></pre></div>
-<h2 id="_8">修改进程优先级<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>renice<span class="w"> </span>-n<span class="w"> </span><span class="o">[</span>number<span class="o">]</span><span class="w"> </span><span class="o">[</span>pid<span class="o">]</span>
+<h3 id="10-ownership_strength">10. OWNERSHIP_STRENGTH<a class="headerlink" href="#10-ownership_strength" title="Permanent link">&para;</a></h3>
+<p>定义多个DataWriter向同一个实例进行修改操作的管理行为，仅当OwnershipQosPolicy的kind为<code>EXCLUSIVE</code>时生效。</p>
+<p><code>OWNERSHIP_STRENGTH</code>涉及DataWriter，且可以对已启动的实体进行修改，其包含一个<code>value</code>的成员，代表当前实例的强度，默认为0。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">OwnershipStrengthQosPolicy</span><span class="w"> </span><span class="n">ownership_strength</span><span class="p">;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1">//The OwnershipStrengthQosPolicy is default constructed with value 0</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1">//Change the strength to 10</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">ownership_strength</span><span class="p">.</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 </span></code></pre></div>
-<h2 id="shell">轮询调用shell命令<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 终端命令行轮询查看状态命令（while do）：</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>top<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span>-p<span class="w"> </span><span class="o">[</span>pid<span class="o">]</span><span class="p">;</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+<h3 id="11-liveliness">11. LIVELINESS<a class="headerlink" href="#11-liveliness" title="Permanent link">&para;</a></h3>
+<p>定义服务用来确保网络上的特定实体仍处于活动状态的机制，用于区分定期更新数据的应用进程和偶尔更改数据的应用进程。</p>
+<p><code>LIVELINESS</code>涉及Topic、DataReader和DataWriter，且不能对已启动的实体进行修改，其包含：</p>
+<ol>
+<li>kind: 确定服务是否需要自动判断活泼性，或者是否需要等到发布端来判断活泼性，默认为AUTOMATIC。<ol>
+<li>AUTOMATIC: 系统会自动监测实体的活跃性，并根据预定义的超时机制来确定实体的活跃状态。</li>
+<li>MANUAL_BY_PARTICIPANT: 实体的活跃状态 由Participant手动设置和管理。</li>
+<li>MANUAL_BY_TOPIC: 实体的活跃状态由Topic手动设置和管理。</li>
+</ol>
+</li>
+<li>lease_duration: 表示实体活跃性的有效期限，即在该期限内，实体必须发送活跃性消息以保持活跃状态，默认为无限制。</li>
+</ol>
+<p><code>LIVELINESS</code>对于DataWriter和DataReader同样有兼容性规则，即DataWriter的kind必须大于等于DataReader的kind，且DataWriter的lease_duration
+必须不大于DataReader的lease_duration。</p>
+<blockquote>
+<p><code>AUTOMATIC</code> &lt; <code>MANUAL_BY_PARTICIPATION</code> &lt; <code>MANUAL_BY_TOPIC</code></p>
+</blockquote>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">LivelinessQosPolicy</span><span class="w"> </span><span class="n">liveliness</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1">//The LivelinessQosPolicy is default constructed with kind = AUTOMATIC</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1">//Change the kind to MANUAL_BY_PARTICIPANT</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">liveliness</span><span class="p">.</span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MANUAL_BY_PARTICIPANT_LIVELINESS_QOS</span><span class="p">;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1">//The LivelinessQosPolicy is default constructed with lease_duration set to infinite</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">//Change the lease_duration to 1 second</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">liveliness</span><span class="p">.</span><span class="n">lease_duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">};</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1">//The LivelinessQosPolicy is default constructed with announcement_period set to infinite</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1">//Change the announcement_period to 1 ms</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">liveliness</span><span class="p">.</span><span class="n">announcement_period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1000000</span><span class="p">};</span>
 </span></code></pre></div>
-<h2 id="addr2line">addr2line<a class="headerlink" href="#addr2line" title="Permanent link">&para;</a></h2>
-<p>根据cppcrash栈信息，定位对应so或可执行程序的行数（编译时加-g）</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>addr2line<span class="w"> </span>-C<span class="w"> </span>-f<span class="w"> </span>-e<span class="w"> </span><span class="o">[</span>.so/.exe/.out<span class="w"> </span>file<span class="o">]</span><span class="w"> </span><span class="o">[</span>crash<span class="w"> </span>pc<span class="o">]</span>
+<h3 id="12-time_based_filter">12. TIME_BASED_FILTER<a class="headerlink" href="#12-time_based_filter" title="Permanent link">&para;</a></h3>
+<p>用于给DataReader过滤数据，以接受满足时间要求内的数据。</p>
+<p><code>TIME_BASED_FILTER</code>涉及DataReader，且可以对已启动的实体进行修改，其数据成员为<code>minimum_separation</code>，表示DataReader所关心的数据满足的最小间隔，默认为0，表示接受所有数据。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">// FastDDS暂未实现</span>
 </span></code></pre></div>
-<h2 id="cfilt">c++filt<a class="headerlink" href="#cfilt" title="Permanent link">&para;</a></h2>
-<p>分析c++ 编译出的晦涩难懂的名称</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>c++filt<span class="w"> </span><span class="o">[</span>eg:<span class="w"> </span>_ZN5RkCam10CamHwIsp2020clearStaticCamHwInfoEv<span class="o">]</span>
+<h3 id="13-partition">13. PARTITION<a class="headerlink" href="#13-partition" title="Permanent link">&para;</a></h3>
+<p>定义新的逻辑分区，以控制数据的传输范围和接收范围。</p>
+<p><code>PARTITION</code>涉及Publisher和Subscriber，且可以对已启动的实体进行修改，包含一个name的列表，用于定义分区名字，默认为空。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">PartitionQosPolicy</span><span class="w"> </span><span class="n">partitions</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1">//The PartitionsQosPolicy is default constructed with max_size = 0.</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1">//Max_size is a private member so you need to use getters and setters to access</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1">//Change the max_size to 20</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">partitions</span><span class="p">.</span><span class="n">set_max_size</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"> </span><span class="c1">//Setter function</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1">//The PartitionsQosPolicy is default constructed with an empty list of partitions</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1">//Partitions is a private member so you need to use getters and setters to access</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="c1">//Add new partitions</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">partitions</span><span class="p">.</span><span class="n">names</span><span class="p">();</span><span class="w"> </span><span class="c1">//Getter function</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="n">part</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;part1&quot;</span><span class="p">);</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="n">part</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;part2&quot;</span><span class="p">);</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="n">partitions</span><span class="p">.</span><span class="n">names</span><span class="p">(</span><span class="n">part</span><span class="p">);</span><span class="w"> </span><span class="c1">//Setter function</span>
 </span></code></pre></div>
-<h2 id="_9">计数<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>ls<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<h3 id="14-reliability">14. RELIABILITY<a class="headerlink" href="#14-reliability" title="Permanent link">&para;</a></h3>
+<p>定义服务提供和请求的可靠性等级。</p>
+<p><code>RELIABILITY</code>涉及Topic、DataWriter和DataReader，且不能对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>kind: 定义服务对于传送的数据的行为，默认DataReader是BEST_EFFORT，DataWriter是RELIABLIE。<ol>
+<li>BEST_EFFORT: 对数据不进行任何重传尝试，数据接收可能存在丢失或乱序。</li>
+<li>RELIABLE: 服务会对在其历史记录中的所有数据进行重传尝试。发布者发布的数据确保被接收者可靠地接收，通过重传和顺序控制等机制实现数据的完整性和顺序性。</li>
+</ol>
+</li>
+<li>max_blocking_time: 配置写操作被阻塞的最大时间，若超过了最大时间，则会触发超时事件，默认是100ms。</li>
+</ol>
+<p><code>RELIABILITY</code>对于DataWriter和DataReader同样有兼容性规则，即DataWriter的kind必须大于等于DataReader的kind。</p>
+<blockquote>
+<p><code>BEST_EFFORT</code> &lt; <code>RELIABLE</code></p>
+</blockquote>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">// FastDDS 实现</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">ReliabilityQosPolicy</span><span class="w"> </span><span class="n">reliability</span><span class="p">;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1">//The ReliabilityQosPolicy is default constructed with kind = BEST_EFFORT</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1">//Change the kind to RELIABLE</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">reliability</span><span class="p">.</span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RELIABLE_RELIABILITY_QOS</span><span class="p">;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1">//The ReliabilityQosPolicy is default constructed with max_blocking_time = 100ms</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1">//Change the max_blocking_time to 1s</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">reliability</span><span class="p">.</span><span class="n">max_blocking_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">};</span>
 </span></code></pre></div>
-<h2 id="grep">grep<a class="headerlink" href="#grep" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># 指定匹配</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;[...]|[...]&quot;</span>
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># 指定排除</span>
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;[...]\|[...]\|[...]&quot;</span>
-</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="c1"># 输出上下文</span>
-</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="c1"># 显示前10行</span>
-</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>grep<span class="w"> </span>-A<span class="w"> </span><span class="m">10</span>
-</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1"># 显示后10行</span>
-</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>grep<span class="w"> </span>-B<span class="w"> </span><span class="m">10</span>
-</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c1"># 显示前后10行</span>
-</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>grep<span class="w"> </span>-C<span class="w"> </span><span class="m">10</span>
+<h3 id="15-transport_priority">15. TRANSPORT_PRIORITY<a class="headerlink" href="#15-transport_priority" title="Permanent link">&para;</a></h3>
+<p>定义数据发送传输的优先级，以确保高优先级数据在网络中具有更高的传输优先级（取决于中间件和网络是否支持优先级机制）。</p>
+<p><code>TRANSPORT_PRIORITY</code>涉及Topic和DataWriter，且可以对已启动的实体进行修改，其包含一个<code>value</code>变量，用于表示优先级，值越大，优先级越高，默认为0。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">// FastDDS暂未实现</span>
 </span></code></pre></div>
+<h3 id="16-lifespan">16. LIFESPAN<a class="headerlink" href="#16-lifespan" title="Permanent link">&para;</a></h3>
+<p>定义DataWriter写入的数据的最大有效时间。</p>
+<p><code>LIFESPAN</code>涉及Topic和DataWriter，且可以对已启动的实体进行修改，其包含一个<code>duration</code>变量，用于表示数据的生命期限，默认无限制。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">LifespanQosPolicy</span><span class="w"> </span><span class="n">lifespan</span><span class="p">;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1">//The LifespanQosPolicy is default constructed with duration set to infinite.</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1">//Change the duration to 5 s</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">lifespan</span><span class="p">.</span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">};</span>
+</span></code></pre></div>
+<h3 id="17-destination_order">17. DESTINATION_ORDER<a class="headerlink" href="#17-destination_order" title="Permanent link">&para;</a></h3>
+<p>用于确定数据消息的逻辑顺序。</p>
+<p><code>DESTINATION_ORDER</code>涉及Topic、DataReader和DataWriter，且不能对已启动的实体进行修改，包含一个<code>kind</code>：</p>
+<ol>
+<li>BY_RECEPTION_TIMESTAMP: 表示数据是根据每个订阅者的接收时间进行排序的，因此每个订阅者可能得到不同的最终值。</li>
+<li>BY_SOURCE_TIMESTAMP: 表示数据是根据源（服务或应用程序）放置的时间戳排序的，在任何情况下，这都保证了所有订阅者中的数据最终值的一致性。</li>
+</ol>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// FastDDS暂未实现</span>
+</span></code></pre></div>
+<h3 id="18-history">18. HISTORY<a class="headerlink" href="#18-history" title="Permanent link">&para;</a></h3>
+<p>定义服务在数据在被成功发送到一个或多个订阅者前受到多次更改的行为。</p>
+<p><code>HISTORY</code>涉及Topic、DataReader和DataWriter，且不能对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>kind: 服务的行为策略，默认为KEEP_LAST。<ol>
+<li>KEEP_LAST: 保留一定数量的历史数据。</li>
+<li>KEEP_ALL: 保留所有的历史数据。</li>
+</ol>
+</li>
+<li>depth: 定义在KEEP_LAST时，必须保存在历史中的最大数据数量，默认为1。</li>
+</ol>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">HistoryQosPolicy</span><span class="w"> </span><span class="n">history</span><span class="p">;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1">//The HistoryQosPolicy is default constructed with kind = KEEP_LAST and depth = 1.</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1">//Change the depth to 20</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">history</span><span class="p">.</span><span class="n">depth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1">//You can also change the kind to KEEP_ALL but after that the depth will not have effect.</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="n">history</span><span class="p">.</span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">KEEP_ALL_HISTORY_QOS</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="19-resource_limits">19. RESOURCE_LIMITS<a class="headerlink" href="#19-resource_limits" title="Permanent link">&para;</a></h3>
+<p>定义服务可使用的资源限制。</p>
+<p><code>RESOURCE_LIMITS</code>涉及Topic、DataReader和DataWriter，且不能对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>max_samples: 定义DataWriter或DataReader可以管理的与之关联的所有实例的最大数据数，默认无限制（FastDDS为5000）。</li>
+<li>max_instances: 定义DataWriter或DataReader可以管理的最大实例数，默认无限制（FastDDS为10）。</li>
+<li>max_samples_per_instance: 定义一个DataWriter或DataReader中的任一实例可以管理的最大数据数，默认无限制（FastDDS为400）。</li>
+</ol>
+<p>其中max_samples必须大于等于max_samples_per_instance，<code>HistoryQosPolicy</code>中的depth必须小于等于max_samples_per_instance。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">ResourceLimitsQosPolicy</span><span class="w"> </span><span class="n">resource_limits</span><span class="p">;</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1">//The ResourceLimitsQosPolicy is default constructed with max_samples = 5000</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1">//Change max_samples to 200</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="n">resource_limits</span><span class="p">.</span><span class="n">max_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="c1">//The ResourceLimitsQosPolicy is default constructed with max_instances = 10</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1">//Change max_instances to 20</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="n">resource_limits</span><span class="p">.</span><span class="n">max_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="c1">//The ResourceLimitsQosPolicy is default constructed with max_samples_per_instance = 400</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1">//Change max_samples_per_instance to 100 as it must be lower than max_samples</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="n">resource_limits</span><span class="p">.</span><span class="n">max_samples_per_instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="c1">//FastDDS custom implementation</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1">//The ResourceLimitsQosPolicy is default constructed with allocated_samples = 100</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="c1">//Change allocated_samples to 50</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="n">resource_limits</span><span class="p">.</span><span class="n">allocated_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="20-entity_factory">20. ENTITY_FACTORY<a class="headerlink" href="#20-entity_factory" title="Permanent link">&para;</a></h3>
+<p>定义DDS实体在作为其他实体的工厂时的行为。</p>
+<p><code>ENTITY_FACTORY</code>涉及Domain Participant Factory、Domain Participant、Publisher、Subscriber，且可以对已启动的实体修改，但只影响之后创建的实体。
+其包含<code>autoenable_created_entities</code>变量，用于标识作为工厂使用的实体是否会自动启用其创建的实例，默认为true。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">// FastDDS实现</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">EntityFactoryQosPolicy</span><span class="w"> </span><span class="n">entity_factory</span><span class="p">;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1">//The EntityFactoryQosPolicy is default constructed with autoenable_created_entities = true</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1">//Change it to false</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">entity_factory</span><span class="p">.</span><span class="n">autoenable_created_entities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="21-writer_data_lifecycle">21. WRITER_DATA_LIFECYCLE<a class="headerlink" href="#21-writer_data_lifecycle" title="Permanent link">&para;</a></h3>
+<p>定义DataWriter关于其所管理的数据实例的生命周期的行为。</p>
+<p><code>WRITER_DATA_LIFECYCLE</code>涉及DataWriter，且可以对已启动的实体进行修改，包含<code>autodispose_unregistered_instances</code>变量，用于标识DataWriter
+是否在实例未注册时自动丢弃该实例相关的数据，默认为true。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1">// FastDDS暂未实现</span>
+</span></code></pre></div>
+<h3 id="22-reader_data_lifecycle">22. READER_DATA_LIFECYCLE<a class="headerlink" href="#22-reader_data_lifecycle" title="Permanent link">&para;</a></h3>
+<p>定义DataReader关于其所管理的数据实例的生命周期的行为。</p>
+<p><code>READER_DATA_LIFECYCLE</code>涉及DataWriter，且可以对已启动的实体进行修改，其数据成员：</p>
+<ol>
+<li>autopurge_no_writer_samples_delay: 定义DataReader在实例状态变为NOT_ALIVE_NO_WRITERS_INSTANCE_STATE后必须保留有关实例的信息的最长持续时间。
+在此时间过后，DataReader将清除实例的所有内部信息，包括将丢失的未采集样本。</li>
+<li>autopurge_disposed_samples_delay:定义DataReader在实例状态变为NOT_ALIVE_DISPOSED_INSTANCE_STATE后必须保留有关实例的信息的最长持续时间。
+在此时间过后，DataReader将清除实例的所有样本。</li>
+</ol>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">// FastDDS暂未实现</span>
+</span></code></pre></div>
+<h2 id="_1">附录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">QoSPolicy</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Meaning</th>
+<th style="text-align: center;">Concerns</th>
+<th style="text-align: center;">Changeable</th>
+<th style="text-align: center;">FastDDS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">USER_DATA</td>
+<td style="text-align: center;">value</td>
+<td style="text-align: center;">用户自定义附加信息</td>
+<td style="text-align: center;">Domain Participant<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">TOPIC_DATA</td>
+<td style="text-align: center;">value</td>
+<td style="text-align: center;">topic自定义附加信息</td>
+<td style="text-align: center;">Topic</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">GROUP_DATA</td>
+<td style="text-align: center;">value</td>
+<td style="text-align: center;">组自定义附加信息</td>
+<td style="text-align: center;">Publisher<br>Subscriber</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">DURABILITY</td>
+<td style="text-align: center;">kind</td>
+<td style="text-align: center;">定义数据的持久性存储方式</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">DURABILITY_SERVICE</td>
+<td style="text-align: center;">service_cleanup_delay<br>history_kind<br>history_depth<br>max_samples<br>max_instances<br>max_samples_per_instance</td>
+<td style="text-align: center;">定义当DURABILITY设置为TRANSIENT或PERSISTENT时durability服务的配置</td>
+<td style="text-align: center;">Topic<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">PRESENTATION</td>
+<td style="text-align: center;">access_scope<br>coherent_access<br>ordered_access</td>
+<td style="text-align: center;">定义数据传输的表示方式和编码方式</td>
+<td style="text-align: center;">Publisher<br>Subscriber</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">DEADLINE</td>
+<td style="text-align: center;">period</td>
+<td style="text-align: center;">定义数据的截止时间或最后期限</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">LATENCY_BUDGET</td>
+<td style="text-align: center;">duration</td>
+<td style="text-align: center;">定义数据传输的最大延迟时间</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">OWNERSHIP</td>
+<td style="text-align: center;">kind</td>
+<td style="text-align: center;">定义数据发布和订阅的所有权管理方式</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">OWNERSHIP_STRENGTH</td>
+<td style="text-align: center;">value</td>
+<td style="text-align: center;">定义所有权共享模式下多个实体的所有权强度</td>
+<td style="text-align: center;">DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">LIVELINESS</td>
+<td style="text-align: center;">kind</td>
+<td style="text-align: center;">定义实体的活跃性或存活状态的管理方式</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">TIME_BASED_FILTER</td>
+<td style="text-align: center;">minimum_separation</td>
+<td style="text-align: center;">用于基于时间的数据过滤和筛选</td>
+<td style="text-align: center;">DataReader</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">PARTITION</td>
+<td style="text-align: center;">name</td>
+<td style="text-align: center;">定义实体的分区和分组方式</td>
+<td style="text-align: center;">Publisher<br>Subscriber</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">RELIABILITY</td>
+<td style="text-align: center;">kind<br>max_blocking_time</td>
+<td style="text-align: center;">定义数据传输的可靠性要求</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">TRANSPORT_PRIORITY</td>
+<td style="text-align: center;">value</td>
+<td style="text-align: center;">定义数据传输的优先级</td>
+<td style="text-align: center;">Topic<br>DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">LIFESPAN</td>
+<td style="text-align: center;">duration</td>
+<td style="text-align: center;">定义数据在DDS系统中的生命周期</td>
+<td style="text-align: center;">Topic<br>DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">DESTINATION_ORDER</td>
+<td style="text-align: center;">kind</td>
+<td style="text-align: center;">定义数据传输的目标顺序</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">HISTORY</td>
+<td style="text-align: center;">kind<br>depth</td>
+<td style="text-align: center;">定义数据历史存储和访问方式</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">RESOURCE_LIMITS</td>
+<td style="text-align: center;">max_samples<br>max_instances<br>max_samples_per_instance</td>
+<td style="text-align: center;">定义DDS所使用的资源限制</td>
+<td style="text-align: center;">Topic<br>DataReader<br>DataWriter</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">ENTITY_FACTORY</td>
+<td style="text-align: center;">autoenable_created_entities</td>
+<td style="text-align: center;">定义DDS实体的创建方式和实体工厂的使用</td>
+<td style="text-align: center;">Domain Participant Factory<br>Domain Participant<br>Publisher<br>Subcriber</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">implemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">WRITER_DATA_LIFECYCLE</td>
+<td style="text-align: center;">autodispose_unregistered_instances</td>
+<td style="text-align: center;">定义数据写入者对数据的生命周期管理方式</td>
+<td style="text-align: center;">DataWriter</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+<tr>
+<td style="text-align: center;">READER_DATA_LIFECYCLE</td>
+<td style="text-align: center;">autopurge_nowriter_samples_delay<br>autopurge_disposed_samples_delay</td>
+<td style="text-align: center;">定义数据读取者对数据的生命周期管理方式</td>
+<td style="text-align: center;">DataReader</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">unimplemented</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -4220,7 +4419,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../shell/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Shell">
+          <a href="../../notes/windows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Windows">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -4230,20 +4429,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Shell
+                Windows
               </div>
             </div>
           </a>
         
         
           
-          <a href="../linux/" class="md-footer__link md-footer__link--next" aria-label="Next: Linux">
+          <a href="../ros2-cross-domain-communication/" class="md-footer__link md-footer__link--next" aria-label="Next: Cross-Domain Communication in ROS2">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Linux
+                Cross-Domain Communication in ROS2
               </div>
             </div>
             <div class="md-footer__button md-icon">

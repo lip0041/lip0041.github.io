@@ -10,13 +10,13 @@
         <meta name="author" content="isobung">
       
       
-        <link rel="canonical" href="https://lip0041.github.io/snippets/jsonparser/">
+        <link rel="canonical" href="https://lip0041.github.io/iot/ros2-cross-domain-communication/">
       
       
-        <link rel="prev" href="../hexstring/">
+        <link rel="prev" href="../dds-qos/">
       
       
-        <link rel="next" href="../locallog/">
+        <link rel="next" href="../../multimedia/av/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Json解析 - lip0041</title>
+        <title>Cross-Domain Communication in ROS2 - lip0041</title>
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jsonparser" class="md-skip">
+        <a href="#ros2-humble" class="md-skip">
           Skip to content
         </a>
       
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Json解析
+              Cross-Domain Communication in ROS2
             
           </span>
         </div>
@@ -349,11 +349,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../iot/dds-qos/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../dds-qos/" class="md-tabs__link">
           
   
     
@@ -446,13 +448,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../group-mean/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../snippets/group-mean/" class="md-tabs__link">
           
   
     
@@ -1243,8 +1243,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1259,12 +1261,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1278,7 +1280,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             IoT
@@ -1292,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iot/dds-qos/" class="md-nav__link">
+      <a href="../dds-qos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1310,10 +1312,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../iot/ros2-cross-domain-communication/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cross-Domain Communication in ROS2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1322,6 +1344,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#domain-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Bridge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Domain Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Library
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastdds-discovery-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastDDS Discovery Server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FastDDS Discovery Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discovery-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动discovery server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ros2配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      跨域通信使用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二者特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastdds-dicovery-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastDDS Dicovery Server补充
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1758,10 +1893,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1798,12 +1931,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
@@ -1817,7 +1950,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Snippets
@@ -1831,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../group-mean/" class="md-nav__link">
+      <a href="../../snippets/group-mean/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1852,7 +1985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bitalign/" class="md-nav__link">
+      <a href="../../snippets/bitalign/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1873,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fileio/" class="md-nav__link">
+      <a href="../../snippets/fileio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1894,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hexstring/" class="md-nav__link">
+      <a href="../../snippets/hexstring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1912,30 +2045,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Json解析
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../snippets/jsonparser/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1944,44 +2057,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#jsoncpp" class="md-nav__link">
-    <span class="md-ellipsis">
-      jsoncpp
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getline" class="md-nav__link">
-    <span class="md-ellipsis">
-      getline
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1994,7 +2069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../locallog/" class="md-nav__link">
+      <a href="../../snippets/locallog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2015,7 +2090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../md5/" class="md-nav__link">
+      <a href="../../snippets/md5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2036,7 +2111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neon/" class="md-nav__link">
+      <a href="../../snippets/neon/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2057,7 +2132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickempty/" class="md-nav__link">
+      <a href="../../snippets/quickempty/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2078,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../splitmp4/" class="md-nav__link">
+      <a href="../../snippets/splitmp4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2099,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../timer-with-cond/" class="md-nav__link">
+      <a href="../../snippets/timer-with-cond/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2120,7 +2195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../timer-with-promise/" class="md-nav__link">
+      <a href="../../snippets/timer-with-promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2141,7 +2216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../timing/" class="md-nav__link">
+      <a href="../../snippets/timing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3357,18 +3432,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jsoncpp" class="md-nav__link">
+  <a href="#domain-bridge" class="md-nav__link">
     <span class="md-ellipsis">
-      jsoncpp
+      Domain Bridge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Domain Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Library
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastdds-discovery-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastDDS Discovery Server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FastDDS Discovery Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discovery-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动discovery server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ros2配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      跨域通信使用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二者特点
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getline" class="md-nav__link">
+  <a href="#fastdds-dicovery-server" class="md-nav__link">
     <span class="md-ellipsis">
-      getline
+      FastDDS Dicovery Server补充
     </span>
   </a>
   
@@ -3389,7 +3539,7 @@
                   
 
   
-    <a href="https://github.com/lip0041/notes/edit/main/docs/snippets/jsonparser.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/edit/main/docs/iot/ros2-cross-domain-communication.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -3398,186 +3548,257 @@
     
       
     
-    <a href="https://github.com/lip0041/notes/raw/main/docs/snippets/jsonparser.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/lip0041/notes/raw/main/docs/iot/ros2-cross-domain-communication.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="jsonparser">JsonParser<a class="headerlink" href="#jsonparser" title="Permanent link">&para;</a></h1>
-<h2 id="jsoncpp">jsoncpp<a class="headerlink" href="#jsoncpp" title="Permanent link">&para;</a></h2>
-<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;json/json.h&quot;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="cm">/* config.json</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="cm">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cm">    &quot;test1&quot;: {</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="cm">        &quot;inputFile&quot;: &quot;/data/1080p.h264&quot;,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="cm">        &quot;outputFile&quot;: &quot;/data/decoded_1080p.yuv&quot;,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="cm">        &quot;width&quot;: 1920,</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="cm">        &quot;height&quot;: 1080,</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="cm">        &quot;pixelFormat&quot;: 2,</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="cm">        &quot;enableSurface&quot;: true,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="cm">        &quot;writeFile&quot;: false,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="cm">        &quot;parallelCount&quot;: 1,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="cm">        &quot;runCount&quot;: 1</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="cm">    },</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="cm">    &quot;test2&quot;: {</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="cm">        &quot;inputFile&quot;: &quot;/data/1080p.yuv&quot;,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="cm">        &quot;outputFile&quot;: &quot;/data/encoded_1080p.h264&quot;,</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="cm">        &quot;width&quot;: 1920,</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="cm">        &quot;height&quot;: 1080,</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="cm">        &quot;pixelFormat&quot;: 2,</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="cm">        &quot;enableSurface&quot;: true,</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="cm">        &quot;writeFile&quot;: false,</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="cm">        &quot;parallelCount&quot;: 1,</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="cm">        &quot;runCount&quot;: 1</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="cm">    }</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="cm">}</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="cm">*/</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="k">struct</span><span class="w"> </span><span class="nc">TestConfig</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">inputFile</span><span class="p">;</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">outputFile</span><span class="p">;</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">    </span><span class="kt">int</span><span class="w">         </span><span class="n">width</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="kt">int</span><span class="w">         </span><span class="n">height</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">    </span><span class="kt">int</span><span class="w">         </span><span class="n">pixelFormat</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">    </span><span class="kt">bool</span><span class="w">        </span><span class="n">enableSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">    </span><span class="kt">bool</span><span class="w">        </span><span class="n">writeFile</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">    </span><span class="kt">int</span><span class="w">         </span><span class="n">parallelCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">    </span><span class="kt">int</span><span class="w">         </span><span class="n">runCount</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="p">};</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ParseConfig</span><span class="p">(</span><span class="n">TestConfig</span><span class="o">&amp;</span><span class="w"> </span><span class="n">testConfig</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mode</span><span class="p">)</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="p">{</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="w"> </span><span class="n">ifs</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w">   </span><span class="n">info</span><span class="p">;</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w">   </span><span class="n">line</span><span class="p">;</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">ifs</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">line</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">        </span><span class="n">info</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">line</span><span class="p">;</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">    </span><span class="c1">// cout &lt;&lt; &quot;json: &quot; &lt;&lt; info &lt;&lt; endl;</span>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">    </span><span class="n">JSONCPP_STRING</span><span class="w">                          </span><span class="n">errs</span><span class="p">;</span>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">    </span><span class="n">Json</span><span class="o">::</span><span class="n">CharReaderBuilder</span><span class="w">                 </span><span class="n">readerBuilder</span><span class="p">;</span>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="w">    </span><span class="n">Json</span><span class="o">::</span><span class="n">Value</span><span class="w">                             </span><span class="n">root</span><span class="p">;</span>
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Json</span><span class="o">::</span><span class="n">CharReader</span><span class="o">&gt;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">jsonReader</span><span class="p">(</span><span class="n">readerBuilder</span><span class="p">.</span><span class="n">newCharReader</span><span class="p">());</span>
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jsonReader</span><span class="o">-&gt;</span><span class="n">parse</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">info</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">info</span><span class="p">.</span><span class="n">length</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">root</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">errs</span><span class="p">);</span>
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">res</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">errs</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;parse failed</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">errs</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">config</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="n">root</span><span class="p">[(</span><span class="s">&quot;test&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">mode</span><span class="p">)).</span><span class="n">c_str</span><span class="p">()];</span>
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">inputFile</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;inputFile&quot;</span><span class="p">].</span><span class="n">asString</span><span class="p">();</span>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">outputFile</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;outputFile&quot;</span><span class="p">].</span><span class="n">asString</span><span class="p">();</span>
-</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">width</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;width&quot;</span><span class="p">].</span><span class="n">asInt</span><span class="p">();</span>
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">height</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;height&quot;</span><span class="p">].</span><span class="n">asInt</span><span class="p">();</span>
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">pixelFormat</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;pixelFormat&quot;</span><span class="p">].</span><span class="n">asInt</span><span class="p">();</span>
-</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">enableSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;enableSurface&quot;</span><span class="p">].</span><span class="n">asBool</span><span class="p">();</span>
-</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">writeFile</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;writeFile&quot;</span><span class="p">].</span><span class="n">asBool</span><span class="p">();</span>
-</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">parallelCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;parallelCount&quot;</span><span class="p">].</span><span class="n">asInt</span><span class="p">();</span>
-</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="w">    </span><span class="n">testConfig</span><span class="p">.</span><span class="n">runCount</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">config</span><span class="p">[</span><span class="s">&quot;runCount&quot;</span><span class="p">].</span><span class="n">asInt</span><span class="p">();</span>
-</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="getline">getline<a class="headerlink" href="#getline" title="Permanent link">&para;</a></h2>
-<div class="language-cpp highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span>
-<span class="normal"><a href="#__codelineno-1-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">static</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">SplitKeyValue</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">{</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;#&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">strStream</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="c1">// use delim</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">strStream</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;=&#39;</span><span class="p">);</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">strStream</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;=&#39;</span><span class="p">);</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\r&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">        </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
+<h1 id="ros2-humble">ros2-humble跨域通信方式<a class="headerlink" href="#ros2-humble" title="Permanent link">&para;</a></h1>
+<p>ros2 humble发行版目前暂知两种跨域通信方式：domain_bridge、fastdds discovery server。</p>
+<p>注：要进行跨设备的通信需要 <code>export ROS_LOCALHOST_ONLY=0</code>。</p>
+<h2 id="domain-bridge">Domain Bridge<a class="headerlink" href="#domain-bridge" title="Permanent link">&para;</a></h2>
+<p>domain bridge是ros2提供的一个扩展库，默认不与ros2源码进行编译。</p>
+<p>要使用domain_bridge来进行跨域通信，首先要下载其源码，进行编译。</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>domain_bridge_ws/src<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>domain_bridge_ws
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble<span class="w"> </span>https://github.com/ros2/domain_bridge.git<span class="w"> </span>src/
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>colcon<span class="w"> </span>build
+</span></code></pre></div>
+<p>domain_bridge的使用方式主要有两种，一个是利用cli程序加载yaml配置文件，另一个是使用domain_bridge提供的C++ API实现跨域通信。</p>
+<h3 id="cli">CLI<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h3>
+<p>通过ros2所提供的run与launch cli工具与yaml配置文件搭配使用，下面以run为例。</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2<span class="w"> </span>run<span class="w"> </span>domain_bridge<span class="w"> </span>domain_bridge<span class="w"> </span><span class="o">[</span>--from<span class="w"> </span><span class="m">1</span><span class="w"> </span>--to<span class="w"> </span><span class="m">2</span><span class="o">]</span><span class="w"> </span>etc/bridge_config.yaml
+</span></code></pre></div>
+<p>其中[-- from 1 --to 2]是可选的，可以将跨域所指定的信息都写在yaml文件中，如果在命令行参数中指定了from to 域id，则其会覆盖yaml文件中所配置的域id。命令的最后需要指定yaml文件的路径。</p>
+<p>下面是一个topic 跨域通信的bridge配置文件（目前只有topic模式支持从配置文件进行跨域通信），必须要指定的是topic_name与其中的type（可以通过 <strong>ros2 topic list -t</strong> 查看）。</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Name of the domain bridge, used for node naming and logging</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">topic_bridge</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">from_domain</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nt">to_domain</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">topics</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="c1"># 建立topic: topic_pubsub 从域2到域3的bridge，指定qos为reliable</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">topic_pubsub</span><span class="p">:</span><span class="w"> </span><span class="c1"># topic_name</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">std_msgs/msg/String</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">qos</span><span class="p">:</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">reliability</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reliable</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="c1"># 该配置可以让所在的topic_pubsub topic同时进行跨域的正反向通信</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="c1"># bidirectional: True</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="c1"># 建立topic: chatter 从域2到域3的bridge</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nt">chatter</span><span class="p">:</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_interfaces/msg/String</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="nt">to_domain</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
+</span></code></pre></div>
+<h3 id="c-library">C++ Library<a class="headerlink" href="#c-library" title="Permanent link">&para;</a></h3>
+<p>domain_bridge提供了c++ 库与相应的api接口供rclcpp代码调用，这种方式支持 topic 和 service的跨域通信（action模式暂不支持）。</p>
+<p>在使用domain_bridge的api进行编码前要先将其加入到工程配置中</p>
+<ol>
+<li>
+<p>在CMakeLists.txt加入</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>find_package<span class="o">(</span>domain_bridge<span class="w"> </span>REQUIRED<span class="o">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># 在可执行文件中加入编译依赖</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>ament_target_dependencies<span class="o">(</span>xxx<span class="w"> </span>domain_bridge<span class="o">)</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>在package.xml中加入</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&lt;depend&gt;</span>domain_bridge<span class="nt">&lt;/depend&gt;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>修改工程代码</p>
+<ul>
+<li>
+<p>在topic中启用domain_bridge主要有3步骤，在publisher方的代码中修改，以MinimalPublisher为例。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;domain_bridge/domain_bridge.hpp&quot;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">MinimalPublisher</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">...</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">};</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="cm">/* int main(int argc, char *argv[])</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="cm">    * {</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="cm">    *     rclcpp::init(argc, argv);</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="cm">    *     rclcpp::spin(std::make_shared&lt;MinimalPublisher&gt;());</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="cm">    *     rclcpp::shutdown();</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="cm">    *     return 0;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="cm">    * }</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="cm">*/</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">{</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">MinimalPublisher</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">    </span><span class="cp"># 1. 创建domain_bridge的对象</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="n">domain_bridge</span><span class="o">::</span><span class="n">DomainBridge</span><span class="w"> </span><span class="n">bridge</span><span class="p">;</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="cp"># 2. 创建bridge_topic，指定topic_name, type_name, from_domain_id, to_domain_id</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="n">bridge</span><span class="p">.</span><span class="n">bridge_topic</span><span class="p">(</span><span class="s">&quot;topic_pubsub&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;std_msgs/msg/String&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">    </span><span class="cp"># 3. 将bridge加入与publisher_node绑定的executor中</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">executors</span><span class="o">::</span><span class="n">SingleThreadedExecutor</span><span class="w"> </span><span class="n">executor</span><span class="p">;</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">    </span><span class="n">bridge</span><span class="p">.</span><span class="n">add_to_executor</span><span class="p">(</span><span class="n">executor</span><span class="p">);</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="n">executor</span><span class="p">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">    </span><span class="n">executor</span><span class="p">.</span><span class="n">spin</span><span class="p">();</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>在service中启用bridge与topic类似，只是将bridge_topic接口更换为bridge_service。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;domain_bridge/domain_bridge.hpp&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cp"># 1. 创建bridge对象</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">domain_bridge</span><span class="o">::</span><span class="n">DomainBridge</span><span class="w"> </span><span class="n">bridge</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="cp"># 2. 创建bridge_service，指定from_domain_id, to_domain_id</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">bridge</span><span class="p">.</span><span class="n">bridge_service</span><span class="o">&lt;</span><span class="n">tutorial_interfaces</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">SrvCliData</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;srv_cli_data&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="cp"># 3. 将bridge加入与service_node绑定的executor中</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">rclcpp</span><span class="o">::</span><span class="n">executors</span><span class="o">::</span><span class="n">SingleThreadedExecutor</span><span class="w"> </span><span class="n">executor</span><span class="p">;</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">bridge</span><span class="p">.</span><span class="n">add_to_executor</span><span class="p">(</span><span class="n">executor</span><span class="p">);</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">executor</span><span class="p">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">executor</span><span class="p">.</span><span class="n">spin</span><span class="p">();</span>
+</span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="fastdds-discovery-server">FastDDS Discovery Server<a class="headerlink" href="#fastdds-discovery-server" title="Permanent link">&para;</a></h2>
+<p>这个发现服务是由fastdds提供的，通过创建中心服务器来实现跨域通信，可有效降低设备发现时的流量。</p>
+<p>使用方式：通过fastdds discovery cli工具进行配置。</p>
+<h3 id="discovery-server">启动discovery server<a class="headerlink" href="#discovery-server" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 启动服务id为0(唯一)的fastdds discovery server，默认基于端口为11811的udp</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>fastdds<span class="w"> </span>discovery<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># 启动服务id为1 ip为127.0.0.1 端口为14520的udp fastdds发现服务(该服务仅能被本机的域使用)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>fastdds<span class="w"> </span>discovery<span class="w"> </span>-i<span class="w"> </span><span class="m">1</span><span class="w"> </span>-l<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-p<span class="w"> </span><span class="m">14520</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># 启动服务id为2 ip为169.254.102.8 端口为15520的 udp fastdds发现服务(可被169.254.102.8所在局域网内的机器域使用)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>fastdds<span class="w"> </span>discovery<span class="w"> </span>-i<span class="w"> </span><span class="m">2</span><span class="w"> </span>-l<span class="w"> </span><span class="m">169</span>.254.102.8<span class="w"> </span>-p<span class="w"> </span><span class="m">14520</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 启动服务id为3 ip为127.0.0.1 端口为42100(默认tcp端口)的tcp fastdds发现服务</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>fastdds<span class="w"> </span>discovery<span class="w"> </span>-i<span class="w"> </span><span class="m">3</span><span class="w"> </span>-t<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-q<span class="w"> </span><span class="m">42100</span>
+</span></code></pre></div>
+<h3 id="ros2">ros2配置<a class="headerlink" href="#ros2" title="Permanent link">&para;</a></h3>
+<p>在启动了fast discovery server之后，要让ros2的topic、service、action通信方式实现跨域通信，则还额外需要在所在ros2终端设置ROS_DISCOVERY_SERVER环境变量。</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 设置下面的环境变量后，所有在该变量生效的环境内的ros2的通信都将通过该discovery server</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DISCOVERY_SERVER</span><span class="o">=</span><span class="s2">&quot;127.0.0.1:11811&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># 可同时绑定多个ip:port，中间用 ; 分隔（这里11811的server-id为0，12811的server-id为1）</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DISCOVERY_SERVER</span><span class="o">=</span><span class="s2">&quot;169.254.102.8:11811;168.254.102.8:12811&quot;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># 注意，上述的 ROS_DISCOVERY_SERVER 中的ip:port-server具有顺序要求，如id为0的server必须在第一个位置，id为1的server必须在第二个位置。</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># 如果指向绑定id为1的server，不想绑定id为0的server，则需要将id为0的server的位置空出，如 export ROS_DISCOVERY_SERVER=&quot;;168.254.102.8:12811&quot;</span>
+</span></code></pre></div>
+<h3 id="_1">跨域通信使用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>在正确进行了上述的配置之后，可以通过ros2的publisher/subscriber demo进行验证。</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 在进行下面的操作前要确保</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># 1. discovery server已启动完毕，且server可被下面的终端访问到</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 2. 下面的终端上均设置了对应的 ROS_DISCOVERY_SERVER 变量</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># 下面假定已启动ip为169.254.102.8 port为11811 server-id为0的fastdds discovery server</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># 在终端1上，配置所需要的domain_id与discovery_server</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DISCOVERY_SERVER</span><span class="o">=</span><span class="s2">&quot;169.254.102.8:11811&quot;</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DOMAIN_ID</span><span class="o">=</span><span class="m">1</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_cpp<span class="w"> </span>talker
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c1"># 在终端2上，配置所需要的domain_id与discovery_server</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DISCOVERY_SERVER</span><span class="o">=</span><span class="s2">&quot;169.254.102.8:11811&quot;</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DOMAIN_ID</span><span class="o">=</span><span class="m">2</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_cpp<span class="w"> </span>listener
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c1"># 在终端3上，配置所需要的domain_id与discovery_server</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DISCOVERY_SERVER</span><span class="o">=</span><span class="s2">&quot;169.254.102.8:11811&quot;</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ROS_DOMAIN_ID</span><span class="o">=</span><span class="m">3</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_cpp<span class="w"> </span>listener
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c1"># 正确配置后，终端1的talker发送的消息可跨域被终端2和终端3的listener接收到</span>
+</span></code></pre></div>
+<h2 id="_2">二者特点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>domain_bridge：</p>
+<ol>
+<li>
+<p>domain_bridge是一个ros2提供的独立软件包，topic跨域通信通过利用订阅者和发布者的socket通信来实现，建立在ros2本身的通信机制之上。</p>
+</li>
+<li>
+<p>domain_bridge可以**细化要跨域通信的参数**，指定某个/某些topic通过bridge进行跨域通信。</p>
+</li>
+<li>
+<p>domain_bridge提供cli工具程序与c++ api接口，使用上相对灵活。</p>
+</li>
+<li>
+<p>domain_bridge由于是建立在ros2的通信机制之上，所以其通信方式可以直接被ros2 cli 工具观察到（在涉及的域环境内，通过ros2 node list可以看到建立的bridge节点；通过rqt_graph可以观察到域内节点排布域连接信息）</p>
+</li>
+<li>
+<p>但domain_bridge是在系统中引入额外的通信域和节点，会增加系统管理的难度。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>fastdds discovery server:</p>
+<ol>
+<li>
+<p>fastdds discovery server采用分布式的发现机制，可快速在节点间建立通信，可以利用分布式的特性进行冗余配置和负载均衡，增加系统的可靠性和容错性。</p>
+</li>
+<li>
+<p>fastdds discovery server支持ros2 topic、service、action三种通信方式的跨域通信，而domain_bridge yaml配置文件目前只支持topic、c++ api只支持topic、service的跨域通信。</p>
+</li>
+<li>
+<p>但fastdds discovery server需要维护discovery server，相比domain_bridge系统资源会更高。</p>
+</li>
+<li>
+<p>由于fastdds discovery server使用了中心服务器来管理跨域通信，所以通过原本的ros2 cli工具无法监测到相关节点信息，需要将ros2 daemon配置为superclient来监测，见 <strong>四、FastDDS Discovery Server补充</strong>）</p>
+</li>
+<li>
+<p>fastdds discovery server是通信域层面的跨域通信，不能进行像domain_bridge一样使限定某个topic才进行跨域通信的配置。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="fastdds-dicovery-server">FastDDS Dicovery Server补充<a class="headerlink" href="#fastdds-dicovery-server" title="Permanent link">&para;</a></h2>
+<p>要通过ros2 cli工具观察通过fastdds discovery server通信的节点信息，需要将ros2 daemon配置为super client，具体配置方式可通过一个xml配置文件和FASTRTPS_DEFAULT_PROFILES_FILE环境变量实现</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nt">&lt;dds&gt;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">        </span><span class="nt">&lt;profiles</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">            </span><span class="nt">&lt;participant</span><span class="w"> </span><span class="na">profile_name=</span><span class="s">&quot;super_client_profile&quot;</span><span class="w"> </span><span class="na">is_default_profile=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">                </span><span class="nt">&lt;rtps&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">                    </span><span class="nt">&lt;builtin&gt;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">                        </span><span class="nt">&lt;discovery_config&gt;</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">                            </span><span class="nt">&lt;discoveryProtocol&gt;</span>SUPER_CLIENT<span class="nt">&lt;/discoveryProtocol&gt;</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">                            </span><span class="nt">&lt;discoveryServersList&gt;</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">                                </span><span class="nt">&lt;RemoteServer</span><span class="w"> </span><span class="na">prefix=</span><span class="s">&quot;44.53.00.5f.45.50.52.4f.53.49.4d.41&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">                                    </span><span class="nt">&lt;metatrafficUnicastLocatorList&gt;</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">                                        </span><span class="nt">&lt;locator&gt;</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">                                            </span><span class="nt">&lt;udpv4&gt;</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">                                                </span><span class="nt">&lt;address&gt;</span>127.0.0.1<span class="nt">&lt;/address&gt;</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">                                                </span><span class="nt">&lt;port&gt;</span>11811<span class="nt">&lt;/port&gt;</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">                                            </span><span class="nt">&lt;/udpv4&gt;</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">                                        </span><span class="nt">&lt;/locator&gt;</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">                                    </span><span class="nt">&lt;/metatrafficUnicastLocatorList&gt;</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="w">                                </span><span class="nt">&lt;/RemoteServer&gt;</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="w">                            </span><span class="nt">&lt;/discoveryServersList&gt;</span>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="w">                        </span><span class="nt">&lt;/discovery_config&gt;</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a><span class="w">                    </span><span class="nt">&lt;/builtin&gt;</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a><span class="w">                </span><span class="nt">&lt;/rtps&gt;</span>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a><span class="w">            </span><span class="nt">&lt;/participant&gt;</span>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a><span class="w">        </span><span class="nt">&lt;/profiles&gt;</span>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a><span class="w">    </span><span class="nt">&lt;/dds&gt;</span>
+</span></code></pre></div>
+<p>在上述的xml文件中，需要配置的信息在通过fastdds discovery启动server的时候会在终端输出。</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>$<span class="w"> </span>fastdds<span class="w"> </span>discovery<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-l<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-p<span class="w"> </span><span class="m">11811</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1">### Server is running ###</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span>Participant<span class="w"> </span>Type:<span class="w">   </span>SERVER
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span>Security:<span class="w">           </span>NO
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span>Server<span class="w"> </span>ID:<span class="w">          </span><span class="m">0</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span>Server<span class="w"> </span>GUID<span class="w"> </span>prefix:<span class="w"> </span><span class="m">44</span>.53.00.5f.45.50.52.4f.53.49.4d.41
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span>Server<span class="w"> </span>Addresses:<span class="w">   </span>UDPv4:<span class="o">[</span><span class="m">127</span>.0.0.1<span class="o">]</span>:11811
+</span></code></pre></div>
+<p>写好xml文件后，需要配置FASTRTPS_DEFAULT_PROFILES_FILE以及重启ros2 daemon进程</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">FASTRTPS_DEFAULT_PROFILES_FILE</span><span class="o">=</span>super_client_configuration_file.xml
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>ros2<span class="w"> </span>daemon<span class="w"> </span>stop
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>ros2<span class="w"> </span>daemon<span class="w"> </span>start
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># 接下来可以通过ros2 cli 工具查看通过discovery_server通信的节点信息</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>ros2<span class="w"> </span>topic<span class="w"> </span>list
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>ros2<span class="w"> </span>node<span class="w"> </span>list
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>rqt_graph
+</span></code></pre></div>
 
 
 
@@ -3615,7 +3836,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hexstring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 16进制字符串">
+          <a href="../dds-qos/" class="md-footer__link md-footer__link--prev" aria-label="Previous: QoS">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3625,20 +3846,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                16进制字符串
+                QoS
               </div>
             </div>
           </a>
         
         
           
-          <a href="../locallog/" class="md-footer__link md-footer__link--next" aria-label="Next: 本地log">
+          <a href="../../multimedia/av/" class="md-footer__link md-footer__link--next" aria-label="Next: Audio and Video">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                本地log
+                Audio and Video
               </div>
             </div>
             <div class="md-footer__button md-icon">
