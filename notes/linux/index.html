@@ -381,7 +381,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../iot/dds-qos/" class="md-tabs__link">
+        <a href="../../iot/ros2/" class="md-tabs__link">
           
   
     
@@ -1074,6 +1074,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      文件拆分与拼接
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       统计代码行数
     </span>
   </a>
@@ -1109,7 +1118,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       添加新的连接
     </span>
@@ -1118,7 +1127,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       保存连接
     </span>
@@ -1127,7 +1136,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       断开连接
     </span>
@@ -1136,7 +1145,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       连接已有连接
     </span>
@@ -1642,6 +1651,8 @@
       
         
       
+        
+      
     
     
       
@@ -1674,6 +1685,27 @@
             IoT
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iot/ros2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ROS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3628,6 +3660,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      文件拆分与拼接
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       统计代码行数
     </span>
   </a>
@@ -3663,7 +3704,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       添加新的连接
     </span>
@@ -3672,7 +3713,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       保存连接
     </span>
@@ -3681,7 +3722,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       断开连接
     </span>
@@ -3690,7 +3731,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       连接已有连接
     </span>
@@ -3735,52 +3776,61 @@
 
 
 <h1 id="linux">Linux平台工具使用技巧<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
-<h2 id="_1">统计代码行数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>cloc工具统计各语言；gitstats统计提交行数</p>
+<h2 id="_1">文件拆分与拼接<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 统计当前目录下的各语言行数，&quot;&quot;内是正则表达式</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>cloc<span class="w"> </span>.<span class="w"> </span>--fullpath<span class="w"> </span>--not-match-d<span class="o">=</span><span class="s2">&quot;./services/3rdpart|./services/tests&quot;</span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 拆分文件</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>split<span class="w"> </span>-b<span class="w"> </span>1M<span class="w"> </span>input_file<span class="w"> </span>output_prefix
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># 拼接文件</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>outfile
+</span></code></pre></div></td></tr></table></div>
+<h2 id="_2">统计代码行数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>cloc工具统计各语言；gitstats统计提交行数</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 统计当前目录下的各语言行数，&quot;&quot;内是正则表达式</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>cloc<span class="w"> </span>.<span class="w"> </span>--fullpath<span class="w"> </span>--not-match-d<span class="o">=</span><span class="s2">&quot;./services/3rdpart|./services/tests&quot;</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="wpawifi">WPA连接wifi<a class="headerlink" href="#wpawifi" title="Permanent link">&para;</a></h2>
 <h3 id="wpa">启动wpa服务<a class="headerlink" href="#wpa" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>wpa_supplicant<span class="w"> </span>-Dnl80211<span class="w"> </span>-iwlan0<span class="w"> </span>-c<span class="w"> </span>/etc/wpa_supplicant.conf
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>wpa_supplicant<span class="w"> </span>-Dnl80211<span class="w"> </span>-iwlan0<span class="w"> </span>-c<span class="w"> </span>/etc/wpa_supplicant.conf
 </span></code></pre></div></td></tr></table></div>
 <h3 id="wpa_cli">启动wpa_cli应用<a class="headerlink" href="#wpa_cli" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>wpa_cli<span class="w"> </span><span class="c1"># 有命令和交互的方式进行操作</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan<span class="w">              </span><span class="c1"># 搜索附件wifi热点</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan_result<span class="w">       </span><span class="c1"># 显示搜索wifi热点</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>status<span class="w">            </span><span class="c1"># 当前 WPA/EAPOL/EAP 通讯状态</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>ping<span class="w">              </span><span class="c1"># pings wpa_supplicant</span>
-</span></code></pre></div></td></tr></table></div>
-<h3 id="_2">添加新的连接<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>add_network<span class="w">                      </span><span class="c1"># 添加一个网络连接,会返回&lt;network id&gt;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>ssid<span class="w"> </span><span class="s1">&#39;&quot;name&quot;&#39;</span><span class="w">   </span><span class="c1"># ssid名称</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>psk<span class="w"> </span><span class="s1">&#39;“psk”&#39;</span><span class="w">     </span><span class="c1"># 密码</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>scan_ssid<span class="w"> </span><span class="m">1</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>priority<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="c1"># 优先级</span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>wpa_cli<span class="w"> </span><span class="c1"># 有命令和交互的方式进行操作</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan<span class="w">              </span><span class="c1"># 搜索附件wifi热点</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan_result<span class="w">       </span><span class="c1"># 显示搜索wifi热点</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>status<span class="w">            </span><span class="c1"># 当前 WPA/EAPOL/EAP 通讯状态</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>ping<span class="w">              </span><span class="c1"># pings wpa_supplicant</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="_3">保存连接<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>save_config<span class="w">   </span><span class="c1"># 信息保存到默认的配置文件中，前面提到的/etc/wpa_supplicant.conf</span>
+<h3 id="_3">添加新的连接<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>add_network<span class="w">                      </span><span class="c1"># 添加一个网络连接,会返回&lt;network id&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>ssid<span class="w"> </span><span class="s1">&#39;&quot;name&quot;&#39;</span><span class="w">   </span><span class="c1"># ssid名称</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>psk<span class="w"> </span><span class="s1">&#39;“psk”&#39;</span><span class="w">     </span><span class="c1"># 密码</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>scan_ssid<span class="w"> </span><span class="m">1</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>priority<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="c1"># 优先级</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="_4">断开连接<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>disable_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;
+<h3 id="_4">保存连接<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>save_config<span class="w">   </span><span class="c1"># 信息保存到默认的配置文件中，前面提到的/etc/wpa_supplicant.conf</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="_5">连接已有连接<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>list_network<span class="w">                  </span><span class="c1"># 列举保存过得连接</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>select_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 连接指定的ssid</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>enable_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 使能制定的ssid</span>
+<h3 id="_5">断开连接<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>disable_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;
+</span></code></pre></div></td></tr></table></div>
+<h3 id="_6">连接已有连接<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>list_network<span class="w">                  </span><span class="c1"># 列举保存过得连接</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>select_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 连接指定的ssid</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>enable_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 使能制定的ssid</span>
 </span></code></pre></div></td></tr></table></div>
 
 
