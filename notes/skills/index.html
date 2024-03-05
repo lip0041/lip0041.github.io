@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
       
@@ -4322,18 +4322,55 @@
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="c1"># 会输出6个数据</span>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="c1"># 48596 2208 1401 353 0 4980 0</span>
 </span></code></pre></div></td></tr></table></div>
-<p>各个数据的含义：（一页默认4KB）
-|statm|meaning|reference|
-|:-:|:-:|:-:|
-|Size(pages)|任务虚拟地址空间的大小| VmSize / 4|
-|Resident(pages)|应用程序正在使用的物理内存的大小|VmRSS / 4|
-|Shared(pages)|进程共享页数||
-|Trs(pages)|程序所拥有的可执行虚拟内存的大小|VmExe / 4|
-|Lrs(pages)|被映像到任务的虚拟内存空间库的大小|VmLib / 4|
-|Drs(pages)|程序数据段和用户态的栈大小|(VmData + VmStk) / 4|
-|Dt(pages)|脏页数量||</p>
+<p>各个数据的含义：（一页默认4KB）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">statm</th>
+<th style="text-align: center;">meaning</th>
+<th style="text-align: center;">reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Size(pages)</td>
+<td style="text-align: center;">任务虚拟地址空间的大小</td>
+<td style="text-align: center;">VmSize / 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">Resident(pages)</td>
+<td style="text-align: center;">应用程序正在使用的物理内存的大小</td>
+<td style="text-align: center;">VmRSS / 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">Shared(pages)</td>
+<td style="text-align: center;">进程共享页数</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Trs(pages)</td>
+<td style="text-align: center;">程序所拥有的可执行虚拟内存的大小</td>
+<td style="text-align: center;">VmExe / 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">Lrs(pages)</td>
+<td style="text-align: center;">被映像到任务的虚拟内存空间库的大小</td>
+<td style="text-align: center;">VmLib / 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">Drs(pages)</td>
+<td style="text-align: center;">程序数据段和用户态的栈大小</td>
+<td style="text-align: center;">(VmData + VmStk) / 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">Dt(pages)</td>
+<td style="text-align: center;">脏页数量</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="stress">stress<a class="headerlink" href="#stress" title="Permanent link">&para;</a></h2>
-<p>压力测试工具，<strong>升级版：stress-ng。兼容stress</strong>。不用另写c++demo了</p>
+<p>压力测试工具，<strong>升级版：stress-ng。兼容stress</strong>。不用另写c++ demo了</p>
 <ol>
 <li>-c, --cpu N：产生N个进程，循环调用sqrt产生cpu压力</li>
 <li>-i, --io N：产生N个进程，循环调用sync将内存缓冲区写到磁盘上，产生io压力。如果缓冲区内数据较少，写到磁盘中的数据也较少，不会产生IO压力。
@@ -4649,7 +4686,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

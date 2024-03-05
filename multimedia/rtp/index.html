@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
       
@@ -3748,18 +3748,53 @@
 <li>第二个字节是<code>FU-Header，|S(1)|E(1)|R(1)|Type(5)|</code>，其中S表示起始分片，E表示最后一个分片，R是保留位，Type是对应的h264的naluType。</li>
 <li>后续的字节是h264除去nalutype的数据，通过前两个字节对nalu进行重构（以及添加startcode）</li>
 </ul>
-<p>解析时，先获取第一个字节的后五个bit，这5 bit表示意思
-|Payload Type| Packet Type|
-|-|-|
-|0|reserved|
-|1-23|NALU unit（单包即是一个h264的nalu数据）
-|24|STAP-A（这个见过）|
-|25|STAP-B|
-|26|MTAP16|
-|27|MTAP24|
-|28|FU-A（这个见过）|
-|29|FU-B|
-|30-31|reserved|</p>
+<p>解析时，先获取第一个字节的后五个bit，这5 bit表示意思</p>
+<table>
+<thead>
+<tr>
+<th>Payload Type</th>
+<th>Packet Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>reserved</td>
+</tr>
+<tr>
+<td>1-23</td>
+<td>NALU unit（单包即是一个h264的nalu数据）</td>
+</tr>
+<tr>
+<td>24</td>
+<td>STAP-A（这个见过）</td>
+</tr>
+<tr>
+<td>25</td>
+<td>STAP-B</td>
+</tr>
+<tr>
+<td>26</td>
+<td>MTAP16</td>
+</tr>
+<tr>
+<td>27</td>
+<td>MTAP24</td>
+</tr>
+<tr>
+<td>28</td>
+<td>FU-A（这个见过）</td>
+</tr>
+<tr>
+<td>29</td>
+<td>FU-B</td>
+</tr>
+<tr>
+<td>30-31</td>
+<td>reserved</td>
+</tr>
+</tbody>
+</table>
 <p>如果是1-23直接第一个字节的后五位就是h264的naluType了。其他的如FU-A（28），则nalu是第一个字节的前3个bit和第二个字节的后5个bit。注意这只是
 获取到了nalu，还应根据第二个字节的S bit是否为1，对应插入<code>0x00000001</code>的startcode（1~23的无脑插<code>0x00000001</code>）。</p>
 <h3 id="nalu">Nalu<a class="headerlink" href="#nalu" title="Permanent link">&para;</a></h3>
@@ -3914,7 +3949,7 @@ DTS-delta|RAP-falg|Stream-state|</code>前三个由sdp中发过来的对应的�
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
