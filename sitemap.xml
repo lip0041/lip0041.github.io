@@ -2,462 +2,462 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lip0041.github.io/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/compiler/gcc/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/compiler/llvm/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/embed/arm/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/embed/board/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/frontend/js-ts/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/iot/dds-qos/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/iot/ros2-cross-domain-communication/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/iot/ros2/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/languages/english/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/av/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/ffmpeg/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/nginx/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/rtp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/rtsp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/simple-rtsp-server/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/multimedia/wfd/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/dhcp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/epoll/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/lt-et/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/ntp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/rfc-2597/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/socket/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/tcp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/network/zero-copy/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/git/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/linux/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/shell/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/skills/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/ssh/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/notes/windows/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/programming/summary/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/programming/cpp/cpp-pat-a1065/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/programming/cpp/cpp/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/programming/cpp/gtest/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/programming/rust/rust/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/bitalign/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/fileio/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/group-mean/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/hexstring/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/jsonparser/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/locallog/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/md5/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/neon/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/quickempty/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/splitmp4/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/timer-with-cond/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/timer-with-promise/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/snippets/timing/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/ab-and-c-64bit/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/ab-for-polynomials/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/ab-format/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/acute-stroke/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/are-they-equal/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/boys-vs-girls/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/counting-leaves/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/course-list-for-student/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/dating/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/deduplication-on-a-linked-list/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/digital-library/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/general-palindromic-number/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/group-photo/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/hello-world-for-u/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/integer-factorization/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/invert-a-binary-tree/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/kuchiguse/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/linked-list-sorting/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/mars-numbers/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/mice-and-rice/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/password/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/pop-sequence/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/product-of-polynomials/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/read-number-in-chinese/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/reversing-linked-list/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/scientific-notation/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/set-similarity/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/sharing/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/shortest-distance/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/shuffling-machine/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/sign-in-and-sign-out/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/speech-patterns/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/spell-it-right/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/student-list-for-course/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/summary/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/the-dominant-color/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/tree-traversals-again/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/tree-traversals/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/waiting-in-line/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/pat/world-cup-betting/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/thu/light-house/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/solutions/thu/proper-rebuild/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lip0041.github.io/testing/test-data/</loc>
-         <lastmod>2024-03-05</lastmod>
+         <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
