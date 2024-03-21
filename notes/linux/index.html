@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1070,6 +1070,39 @@
       Table of Contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap内存
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="swap内存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#swap_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      增加swap空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      控制系统使用swap的策略
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3658,6 +3691,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap内存
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="swap内存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#swap_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      增加swap空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      控制系统使用swap的策略
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       文件拆分与拼接
@@ -3776,61 +3842,105 @@
 
 
 <h1 id="linux">Linux平台工具使用技巧<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
+<h2 id="swap">swap内存<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h2>
+<h3 id="swap_1">增加swap空间<a class="headerlink" href="#swap_1" title="Permanent link">&para;</a></h3>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 关闭swap分区</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>sudo<span class="w"> </span>swapoff<span class="w"> </span>/swapfile
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># 修改swap分区空间为16GB</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>sudo<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/swapfile<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">16384</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># 设置swap权限</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>/swapfile
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># 建立swap文件系统</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/swapfile
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># 激活swap文件系统</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>/swapfile
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># 设置开启自动启用（可选）</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1"># 末尾添加</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>/swapfile<span class="w"> </span>swap<span class="w"> </span>swap<span class="w"> </span>defaults<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="swap_2">控制系统使用swap的策略<a class="headerlink" href="#swap_2" title="Permanent link">&para;</a></h3>
+<p>linux系统下<code>/proc/sys/vm/swappiness</code>文件记录了系统使用swap分区的积极性，值越小越不积极（即尽可能地使用物理内存）</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 临时修改swappiness</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>sysctl<span class="w"> </span>vm.swappiness<span class="o">=</span><span class="m">10</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># 永久性修改</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/sysctl.conf
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># 末尾增加</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>vm.swappiness<span class="o">=</span><span class="m">10</span>
+</span></code></pre></div></td></tr></table></div>
 <h2 id="_1">文件拆分与拼接<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 拆分文件</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>split<span class="w"> </span>-b<span class="w"> </span>1M<span class="w"> </span>input_file<span class="w"> </span>output_prefix
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># 拼接文件</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>outfile
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># 拆分文件</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>split<span class="w"> </span>-b<span class="w"> </span>1M<span class="w"> </span>input_file<span class="w"> </span>output_prefix
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># 拼接文件</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>cat<span class="w"> </span>file1<span class="w"> </span>file2<span class="w"> </span>&gt;<span class="w"> </span>outfile
 </span></code></pre></div></td></tr></table></div>
 <h2 id="_2">统计代码行数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>cloc工具统计各语言；gitstats统计提交行数</p>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 统计当前目录下的各语言行数，&quot;&quot;内是正则表达式</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>cloc<span class="w"> </span>.<span class="w"> </span>--fullpath<span class="w"> </span>--not-match-d<span class="o">=</span><span class="s2">&quot;./services/3rdpart|./services/tests&quot;</span>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># 统计当前目录下的各语言行数，&quot;&quot;内是正则表达式</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>cloc<span class="w"> </span>.<span class="w"> </span>--fullpath<span class="w"> </span>--not-match-d<span class="o">=</span><span class="s2">&quot;./services/3rdpart|./services/tests&quot;</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="wpawifi">WPA连接wifi<a class="headerlink" href="#wpawifi" title="Permanent link">&para;</a></h2>
 <h3 id="wpa">启动wpa服务<a class="headerlink" href="#wpa" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>wpa_supplicant<span class="w"> </span>-Dnl80211<span class="w"> </span>-iwlan0<span class="w"> </span>-c<span class="w"> </span>/etc/wpa_supplicant.conf
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>wpa_supplicant<span class="w"> </span>-Dnl80211<span class="w"> </span>-iwlan0<span class="w"> </span>-c<span class="w"> </span>/etc/wpa_supplicant.conf
 </span></code></pre></div></td></tr></table></div>
 <h3 id="wpa_cli">启动wpa_cli应用<a class="headerlink" href="#wpa_cli" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>wpa_cli<span class="w"> </span><span class="c1"># 有命令和交互的方式进行操作</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan<span class="w">              </span><span class="c1"># 搜索附件wifi热点</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan_result<span class="w">       </span><span class="c1"># 显示搜索wifi热点</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>status<span class="w">            </span><span class="c1"># 当前 WPA/EAPOL/EAP 通讯状态</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>ping<span class="w">              </span><span class="c1"># pings wpa_supplicant</span>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>wpa_cli<span class="w"> </span><span class="c1"># 有命令和交互的方式进行操作</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan<span class="w">              </span><span class="c1"># 搜索附件wifi热点</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>scan_result<span class="w">       </span><span class="c1"># 显示搜索wifi热点</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>status<span class="w">            </span><span class="c1"># 当前 WPA/EAPOL/EAP 通讯状态</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>ping<span class="w">              </span><span class="c1"># pings wpa_supplicant</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="_3">添加新的连接<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>add_network<span class="w">                      </span><span class="c1"># 添加一个网络连接,会返回&lt;network id&gt;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>ssid<span class="w"> </span><span class="s1">&#39;&quot;name&quot;&#39;</span><span class="w">   </span><span class="c1"># ssid名称</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>psk<span class="w"> </span><span class="s1">&#39;“psk”&#39;</span><span class="w">     </span><span class="c1"># 密码</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>scan_ssid<span class="w"> </span><span class="m">1</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>priority<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="c1"># 优先级</span>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>add_network<span class="w">                      </span><span class="c1"># 添加一个网络连接,会返回&lt;network id&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>ssid<span class="w"> </span><span class="s1">&#39;&quot;name&quot;&#39;</span><span class="w">   </span><span class="c1"># ssid名称</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>psk<span class="w"> </span><span class="s1">&#39;“psk”&#39;</span><span class="w">     </span><span class="c1"># 密码</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>scan_ssid<span class="w"> </span><span class="m">1</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a>wpa_cli<span class="w"> </span>set_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span>priority<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="c1"># 优先级</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="_4">保存连接<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>save_config<span class="w">   </span><span class="c1"># 信息保存到默认的配置文件中，前面提到的/etc/wpa_supplicant.conf</span>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>save_config<span class="w">   </span><span class="c1"># 信息保存到默认的配置文件中，前面提到的/etc/wpa_supplicant.conf</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="_5">断开连接<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>disable_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>disable_network<span class="w"> </span>&lt;network<span class="w"> </span>id&gt;
 </span></code></pre></div></td></tr></table></div>
 <h3 id="_6">连接已有连接<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>list_network<span class="w">                  </span><span class="c1"># 列举保存过得连接</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>select_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 连接指定的ssid</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>enable_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 使能制定的ssid</span>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>list_network<span class="w">                  </span><span class="c1"># 列举保存过得连接</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>select_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 连接指定的ssid</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>wpa_cli<span class="w"> </span>-i<span class="w"> </span>wlan0<span class="w"> </span>enable_network<span class="w">  </span>&lt;network<span class="w"> </span>id&gt;<span class="w">  </span><span class="c1"># 使能制定的ssid</span>
 </span></code></pre></div></td></tr></table></div>
 
 
@@ -3950,7 +4060,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
