@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
     
     
       
@@ -3683,15 +3683,22 @@
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># 路径 ~/.ssh/id_rsa</span>
 </span></code></pre></div></td></tr></table></div>
 <h2 id="_1">挂载远端文件系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>```sh</p>
-<h1 id="sshfs">安装sshfs客户端<a class="headerlink" href="#sshfs" title="Permanent link">&para;</a></h1>
-<p>sudo apt install sshfs</p>
-<h1 id="_2">创建挂载目录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<p>sudo mkdir -p /mnt/test</p>
-<h1 id="_3">挂载远端文件夹<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
-<p>sudo sshfs -o allow_other user_name@xxx:/home/... /mnt/test</p>
-<h1 id="_4">挂载时使用密钥验证身份<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
-<p>sudo sshfs -o allow_other,IdentityFile=/home/user_name/.ssh/id_rsa user_name@xxx:/home/... /mnt/test</p>
+<div class="language-sh highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># 安装sshfs客户端</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>sshfs
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># 创建挂载目录</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/test
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># 挂载远端文件夹</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>sudo<span class="w"> </span>sshfs<span class="w"> </span>-o<span class="w"> </span>allow_other<span class="w"> </span>user_name@xxx:/home/...<span class="w"> </span>/mnt/test
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># 挂载时使用密钥验证身份</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>sudo<span class="w"> </span>sshfs<span class="w"> </span>-o<span class="w"> </span>allow_other,IdentityFile<span class="o">=</span>/home/user_name/.ssh/id_rsa<span class="w"> </span>user_name@xxx:/home/...<span class="w"> </span>/mnt/test
+</span></code></pre></div></td></tr></table></div>
 
 
 
@@ -3810,7 +3817,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
